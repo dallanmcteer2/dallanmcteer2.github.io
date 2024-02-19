@@ -1,0 +1,224 @@
+body {
+    padding: 75px 0 0 0;
+}
+.main-content {
+    padding: 0 18.75vw;
+}
+.main-article-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.article-title {
+    padding: 1.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 auto 0 auto;
+}
+.article-description {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 auto 1.5rem auto;
+}
+.article-date {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 1rem auto;
+}
+.article-title, .article-description, .article-date {
+    width: 65%;
+    display: flex;
+}
+.main-article-content {
+    background-color: #18191A;
+    border-radius: .75rem;
+    width: 85%;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+}
+.main-header-image {
+    width: 100%;
+}
+.header-image {
+    width: 100%;
+    display: block;
+}
+.article-paragraph, .article-paragraph-top, .article-paragraph-bottom, .article-image-container {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 70%;
+    margin: 0 auto 1.5rem auto;
+}
+.article-paragraph-top {
+    margin: 3rem auto 1.5rem auto;
+}
+.article-data {
+    display: flex;
+    margin: 0 auto 1rem auto;
+}
+.article-paragraph-bottom {
+    margin: 0 auto 3rem auto;
+}
+.article-paragraph-link {
+    transition: .15s ease-in-out;
+}
+.article-paragraph-link:hover {
+    color: #c34b1b;
+}
+.article-heading {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 3rem auto .75rem auto;
+}
+.article-subheading {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 0 auto 1rem auto;
+}
+.article-heading-team-logo-container {
+    height: 2rem;
+    margin: 0 .5rem 0 0;
+}
+.article-heading-team-logo {
+    height: 100%;
+}
+.article-data-text {
+    line-height: 1;
+}
+.driver-nation-container {
+    height: 1.2rem;
+    border-radius: .25rem;
+    overflow: hidden;
+    margin: 0 .5rem 0 0;
+}
+.driver-nation-flag {
+    height: 100%;
+    display: block;
+}
+.article-image-container {
+    margin: 0 auto 0 auto;
+    border-radius: .65rem;
+    overflow: hidden;
+}
+.article-image {
+    width: 100%;
+    display: block;
+}
+.featured-container {
+    height: auto;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: 0 auto 1.5rem auto;
+}
+.featured-button {
+    background-color: #18191A;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: .3rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin: .5rem .5rem 0 0;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+    transition: .15s ease-in-out;
+}
+.featured-button:hover {
+    background-color: #5A5A5A;
+    border: solid 2px #c34b1b;
+}
+@media (max-width: 83rem) {
+    .main-content {
+        padding: 0 1.375rem;
+    }
+}
+@media (max-width: 62.49em) {
+    .article-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .article-description {
+        font-size: 1.1rem;
+    }
+    .article-date {
+        font-size: .9rem;
+    }
+    .article-paragraph, .article-paragraph-top, .article-paragraph-bottom, .article-image-container {
+        width: 85%;
+        font-size: .9rem;
+    }
+    .article-paragraph {
+        margin: 0 auto 1rem auto;
+    }
+    .article-paragraph-top {
+        margin: 1.5rem auto 1rem auto;
+    }
+    .article-heading {
+        font-size: 1.2rem;
+    }
+    .article-subheading {
+        font-size: 1rem;
+    }
+    .article-paragraph-bottom {
+        margin: 0 auto 1.5rem auto;
+    }
+    .main-content {
+        padding: 0;
+    }
+    .main-article-content {
+        border-radius: 0;
+        border-bottom: solid 2px #c34b1b;
+    }
+    .main-header-image {
+        border-bottom: solid 2px #c34b1b;
+        border-top: solid 2px #c34b1b;
+    }
+    .driver-nation-container {
+        height: 1rem;
+    }
+    .article-data-text {
+        line-height: 1.15;
+    }
+    .article-heading-team-logo-container {
+        height: 1.5rem;
+    }
+    .article-heading {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 40em) {
+    .article-title, .article-description, .article-date, .featured-container {
+        width: 80%;
+    }
+    .main-article-content {
+        width: 100%;
+    }
+    .featured-container {
+        margin: 0 auto 1rem auto;
+    }
+    .featured-button {
+        font-size: .7rem;
+        padding: .5rem;
+    }
+    .hide2 {
+        display: none;
+    }
+}
+@media (max-width: 22.5em) {
+    body {
+        padding: 60px 0 0 0;
+    }
+    .article-heading-team-logo-container {
+        height: 1.2rem;
+    }
+    .article-heading {
+        font-size: .9rem;
+        line-height: 1.3;
+    }
+}

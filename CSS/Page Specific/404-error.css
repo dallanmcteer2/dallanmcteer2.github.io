@@ -1,0 +1,76 @@
+.main-404-content {
+    padding: 0 18.75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.vfs-404-logo-container {
+    width: auto;
+    height: 22.5rem;
+    margin: 3rem 0;
+}
+.vfs-404-logo {
+    height: 100%;
+    width: 100%;
+}
+.text-404-container {
+    margin: 0 0 1rem 0;
+    width: 70%;
+}
+.text-404 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.text-404-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.text-404-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #c34b1b;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    transition: .2s;
+}
+.text-404-link:hover {
+    text-decoration-color: #c34b1b;
+}
+@media (max-width: 83em) {
+    .main-404-content {
+        padding: 0 1.375rem;
+    }
+    .vfs-404-logo-container {
+        height: 20rem;
+    }
+}
+@media (max-width: 62.49em) {
+    .vfs-404-logo-container {
+        width: 20rem;
+        height: auto;
+    }
+    .text-404-container {
+        width: 100%;
+    }
+    .text-404 {
+        font-size: 1.2rem;
+    }
+    .text-404-description {
+        font-size: 1.1rem;
+    }
+    .text-404-link {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 40em) {
+    .text-404 {
+        font-size: 1rem;
+    }
+    .text-404-description {
+        font-size: 1rem;
+    }
+    .text-404-link {
+        font-size: 1rem;
+    }
+}

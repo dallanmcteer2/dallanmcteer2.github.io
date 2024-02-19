@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="../img/misc/favicon.png">
+    <link rel="stylesheet" href="../CSS/Main CSS/stylesindex.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/drivers.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/standings.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/header.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/sidebar.css">
+    <script defer="defer" src="../JS/drivers-list.js"></script>
+    <title>VFS | Reserve Drivers</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <div id="mainHeader">
+            <header class="header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="../img/misc/VFSLogoWhite.png" alt="VFS Logo">
+                    </a>
+                </div>
+            </header>
+        </div>
+    </nav>
+    <div class="navigation">
+        <label class="sidebar-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <a class="sidebar-links" href="../all-news.html">
+                    <h5 class="sidebar-links-text">Articles</h5>
+                </a>
+                <a class="sidebar-links" href="../calendar.html">
+                    <h5 class="sidebar-links-text">Calendar</h5>
+                </a>
+                <a class="sidebar-links" href="../standings/season-1/tier-1.html">
+                    <h5 class="sidebar-links-text">Standings</h5>
+                </a>
+                <a class="sidebar-links" href="tier-1.html">
+                    <h5 class="sidebar-links-text">Drivers</h5>
+                </a>
+                <a class="sidebar-links" href="../records/all-time.html">
+                    <h5 class="sidebar-links-text">Records</h5>
+                </a>
+                <!--<a class="sidebar-links" href="../archives.html">
+                    <h5 class="sidebar-links-text">Archives</h5>
+                </a>
+                <a class="sidebar-links" href="../about-us.html">
+                    <h5 class="sidebar-links-text">About Us</h5>
+                </a>-->
+                <a class="sidebar-links" href="../contact-us.html">
+                    <h5 class="sidebar-links-text">Contact Us</h5>
+                </a>
+                <a class="sidebar-links" href="../register.html">
+                    <h5 class="sidebar-links-text">Register</h5>
+                </a>
+            </nav>
+        </aside>
+    </div>
+    <div class="page-title">
+        <div>
+            <h1>VFS Drivers</h1>
+        </div>
+    </div>
+    <div class="drivers-list-bar-container">
+        <div class="drivers-list-sort-by-title">Sort Drivers By:</div>
+        <div class="drivers-list-buttons">
+            <button class="drivers-menu active" id="btn-1" title="Drivers' Standings">League Team</button>
+            <button class="drivers-menu" id="btn-2" title="Constructors' Standings">Esports Team</button>
+        </div>
+    </div>
+    <div class="selection-table">
+        <div class="selection-container-drivers"> 
+            <div class="selections">
+                <div class="select-box-drivers">Category</div>
+                <select id="links" size="1" onchange="window.location.href=this.value" class="select-container">
+                    <option value="tier-1.html">F1 Tier 1</option>
+                    <!--<option value="tier-2.html">F1 Tier 2</option>
+                    <option value="tier-3.html">F1 Tier 3</option>
+                    <option value="../standings/season-1/drivers/tier-4.html">F1 Tier 4</option>
+                    <option value="../standings/season-1/drivers/tier-5.html">F1 Tier 5</option>-->
+                    <option selected value="reserves.html">Reserves</option>
+                </select>
+                <script>
+                    function reset_options() {
+                        document.getElementById('links').options.length = 0;
+                        return true;
+                    }
+                  </script>
+                  <body onbeforeunload="reset_options()"></body>
+            </div>
+        </div>
+    </div>
+
+    <!--DRIVER BOX START-->
+    <div class="driver-list-container">
+
+        <!--Reserve #1-->
+
+        <a class="driver-box reserves" href="reserves/nikolas-arro.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Nikolas</span>
+                    <span class="driver-name-last">Arro</span>
+                    <span class="driver-number">#12</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/usa.png" class="driver-details-flag">
+                        </div>
+                        United States
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 1 Reserve 
+                    </span>
+                </div>
+            </div>
+        </a>
+        <!--Reserve #2-->
+
+        <a class="driver-box reserves" href="reserves/soy-bean.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Soy</span>
+                    <span class="driver-name-last">Bean</span>
+                    <span class="driver-number">#15</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/england.png" class="driver-details-flag">
+                        </div>
+                        England
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 1 Reserve 
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Reserve #3-->
+
+        <a class="driver-box reserves" href="reserves/cica-mile.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Čića</span>
+                    <span class="driver-name-last">Mile</span>
+                    <span class="driver-number">#19</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 1 Reserve 
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Reserve #4-->
+
+        <a class="driver-box reserves" href="reserves/oksar-tomala.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Oskar</span>
+                    <span class="driver-name-last">Tomala</span>
+                    <span class="driver-number">#45</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/poland.png" class="driver-details-flag">
+                        </div>
+                        Poland
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 1 Reserve 
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Reserve #5-->
+
+        <a class="driver-box reserves" href="reserves/mikkel-stenerud.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Mikkel</span>
+                    <span class="driver-name-last">Stenerud</span>
+                    <span class="driver-number">#69</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/norway.png" class="driver-details-flag">
+                        </div>
+                        Norway
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 1 Reserve 
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Reserve #6-->
+
+        <a class="driver-box reserves" href="reserves/tom-gijsberts.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Tom</span>
+                    <span class="driver-name-last">Gijsberts</span>
+                    <span class="driver-number">#5</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 2 Reserve
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Reserve #7-->
+
+        <a class="driver-box reserves" href="reserves/martijn-bouterse.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Martijn</span>
+                    <span class="driver-name-last">Bouterse</span>
+                    <span class="driver-number">#12</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 2 Reserve
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Reserve #8-->
+
+        <a class="driver-box reserves" href="reserves/kotks-caparezza.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Kotks</span>
+                    <span class="driver-name-last">Caparezza</span>
+                    <span class="driver-number">#15</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/england.png" class="driver-details-flag">
+                        </div>
+                        England
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 2 Reserve
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Reserve #9-->
+
+        <a class="driver-box reserves" href="reserves/ondrej-drahovzal.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Ondřej</span>
+                    <span class="driver-name-last">Drahovzal</span>
+                    <span class="driver-number">#94</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 2 Reserve
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Reserve #10-->
+
+        <a class="driver-box reserves" href="reserves/gustaf-schubert.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #404040;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Reserve2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Gustaf</span>
+                    <span class="driver-name-last">Schubert</span>
+                    <span class="driver-number">#95</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/germany.png" class="driver-details-flag">
+                        </div>
+                        Germany
+                    </span>
+                    <span class="driver-details-team">
+                        Tier 2 Reserve  
+                    </span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--DRIVER BOX END-->
+
+    <!--DRIVER BOX START // ESPORTS TEAMS-->
+    <div class="driver-list-container hide-main">
+
+        <!--FRC #1-->
+
+        <a class="driver-box frc" href="reserves/nikolas-arro.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #4dabea;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/FRC.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Nikolas</span>
+                    <span class="driver-name-last">Arro</span>
+                    <span class="driver-number">#12</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/usa.png" class="driver-details-flag">
+                        </div>
+                        United States
+                    </span>
+                    <span class="driver-details-team hide">
+                        Formula Racing Claret eSports
+                    </span>
+                    <span class="driver-details-team show">
+                        FRC eSports
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--AMS #1-->
+
+        <a class="driver-box ams" href="reserves/cica-mile.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #9d00dd;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/AMS.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Čića</span>
+                    <span class="driver-name-last">Mile</span>
+                    <span class="driver-number">#19</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team hide">
+                        Alien Motorsports
+                    </span>
+                    <span class="driver-details-team show">
+                        AMS
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #1-->
+
+        <a class="driver-box no-team" href="reserves/tom-gijsberts.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Tom</span>
+                    <span class="driver-name-last">Gijsberts</span>
+                    <span class="driver-number">#5</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #2-->
+
+        <a class="driver-box no-team" href="reserves/martijn-bouterse.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Martijn</span>
+                    <span class="driver-name-last">Bouterse</span>
+                    <span class="driver-number">#12</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #3-->
+
+        <a class="driver-box no-team" href="reserves/kotks-caparezza.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Kotks</span>
+                    <span class="driver-name-last">Caparezza</span>
+                    <span class="driver-number">#15</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/england.png" class="driver-details-flag">
+                        </div>
+                        England
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #4-->
+
+        <a class="driver-box no-team" href="reserves/soy-bean.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Soy</span>
+                    <span class="driver-name-last">Bean</span>
+                    <span class="driver-number">#15</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/england.png" class="driver-details-flag">
+                        </div>
+                        England
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #5-->
+
+        <a class="driver-box no-team" href="reserves/oskar-tomala.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Oskar</span>
+                    <span class="driver-name-last">Tomala</span>
+                    <span class="driver-number">#45</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/poland.png" class="driver-details-flag">
+                        </div>
+                        Poland
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #6-->
+
+        <a class="driver-box no-team" href="reserves/mikkel-stenerud.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Mikkel</span>
+                    <span class="driver-name-last">Stenerud</span>
+                    <span class="driver-number">#69</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/norway.png" class="driver-details-flag">
+                        </div>
+                        Norway
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #7-->
+
+        <a class="driver-box no-team" href="reserves/ondrej-drahovzal.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Ondřej</span>
+                    <span class="driver-name-last">Drahovzal</span>
+                    <span class="driver-number">#94</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #8-->
+
+        <a class="driver-box no-team" href="reserves/gustaf-schubert.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Gustaf</span>
+                    <span class="driver-name-last">Schubert</span>
+                    <span class="driver-number">#95</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/germany.png" class="driver-details-flag">
+                        </div>
+                        Germany
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+    <!--DRIVER BOX END-->
+    </div>
+    <footer>
+        <div class="footer-socials">
+            <div class="socials-icons">
+                <a href="https://discord.gg/FwJ5JuAHNx" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/discord.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/virtualformulaseries.official/" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/instagram.png">
+                    </div>
+                </a>
+                <a href="https://www.twitter.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/twitter.png">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/youtube.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>VIRTUAL FORMULA SERIES 2023, ALL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+</html>

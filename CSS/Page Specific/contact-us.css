@@ -1,0 +1,85 @@
+.main-contact-content {
+    padding: 0 18.75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-self: flex-start;
+    flex-grow: 1;
+}
+.contact-vfs-logo-container {
+    width: auto;
+    height: 22.5rem;
+    margin: 3rem 0;
+}
+.contact-vfs-logo {
+    height: 100%;
+    width: 100%;
+}
+.contact-text-container {
+    margin: 0 0 1rem 0;
+    width: 70%;
+}
+.contact-text {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.contact-text-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #c34b1b;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    transition: .2s;
+}
+.contact-text-link:hover {
+    text-decoration-color: #c34b1b;
+}
+@media (max-width: 83em) {
+    .main-contact-content {
+        padding: 0 1.375rem;
+    }
+    .contact-vfs-logo-container {
+        height: 20rem;
+    }
+}
+@media (max-width: 62.49em) {
+    .contact-vfs-logo-container {
+        width: 20rem;
+        height: auto;
+        margin: 2rem 0;
+    }
+    .contact-text-container {
+        width: 95%;
+    }
+    .contact-text {
+        font-size: 1.2rem;
+    }
+    .contact-text-link {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 40em) {
+    .hide2 {
+        display: none;
+    }
+    .contact-text {
+        font-size: 1rem;
+    }
+    .contact-text-link {
+        font-size: 1rem;
+    }
+    .contact-vfs-logo-container {
+        width: 15rem;
+    }
+}
+@media (min-width: 40em) {
+    .show2 {
+        display: none!important;
+    }
+}
+@media (max-width: 22.5em) {
+    .contact-vfs-logo-container {
+        width: 13rem;
+    }
+}

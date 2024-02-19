@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.article-border-no-bottom {
+    margin-top: 40px;
+    border-top: solid 10px #c34b1b;
+    border-right: solid 10px #c34b1b;
+    border-left: solid 10px #c34b1b;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+fieldset {
+    border: 0;
+    padding: 0;
+}
+.article-border-no-bottom legend {
+    line-height: 1;
+    text-align: left;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+legend {
+    padding: 0;
+}
+.border-text-font {
+    margin-left: 20px;
+    cursor: pointer;
+}
+legend:hover h6 {
+    text-decoration: underline;
+    color: #c34b1b;
+    transition: 0.4s;
+}
+.no-margin {
+    margin: 0;
+}

@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="../img/misc/favicon.png">
+    <link rel="stylesheet" href="../CSS/Main CSS/stylesindex.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/drivers.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/standings.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/header.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/sidebar.css">
+    <script defer="defer" src="../JS/drivers-list.js"></script>
+    <title>VFS | Tier 1 Drivers</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <div id="mainHeader">
+            <header class="header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="../img/misc/VFSLogoWhite.png" alt="VFS Logo">
+                    </a>
+                </div>
+            </header>
+        </div>
+    </nav>
+    <div class="navigation">
+        <label class="sidebar-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <a class="sidebar-links" href="../all-news.html">
+                    <h5 class="sidebar-links-text">Articles</h5>
+                </a>
+                <a class="sidebar-links" href="../calendar.html">
+                    <h5 class="sidebar-links-text">Calendar</h5>
+                </a>
+                <a class="sidebar-links" href="../standings/season-1/tier-1.html">
+                    <h5 class="sidebar-links-text">Standings</h5>
+                </a>
+                <a class="sidebar-links" href="tier-1.html">
+                    <h5 class="sidebar-links-text">Drivers</h5>
+                </a>
+                <a class="sidebar-links" href="../records/all-time.html">
+                    <h5 class="sidebar-links-text">Records</h5>
+                </a>
+                <!--<a class="sidebar-links" href="../archives.html">
+                    <h5 class="sidebar-links-text">Archives</h5>
+                </a>
+                <a class="sidebar-links" href="../about-us.html">
+                    <h5 class="sidebar-links-text">About Us</h5>
+                </a>-->
+                <a class="sidebar-links" href="../contact-us.html">
+                    <h5 class="sidebar-links-text">Contact Us</h5>
+                </a>
+                <a class="sidebar-links" href="../register.html">
+                    <h5 class="sidebar-links-text">Register</h5>
+                </a>
+            </nav>
+        </aside>
+    </div>
+    <div class="page-title">
+        <div>
+            <h1>VFS Drivers</h1>
+        </div>
+    </div>
+    <div class="drivers-list-bar-container">
+        <div class="drivers-list-sort-by-title">Sort Drivers By:</div>
+        <div class="drivers-list-buttons">
+            <button class="drivers-menu active" id="btn-1" title="Drivers' Standings">League Team</button>
+            <button class="drivers-menu" id="btn-2" title="Constructors' Standings">Esports Team</button>
+        </div>
+    </div>
+    <div class="selection-table">
+        <div class="selection-container-drivers"> 
+            <div class="selections">
+                <div class="select-box-drivers">Category</div>
+                <select id="links" size="1" onchange="window.location.href=this.value" class="select-container">
+                    <option value="tier-1.html">F1 Tier 1</option>
+                    <!--<option value="tier-2.html">F1 Tier 2</option>
+                    <option value="tier-3.html">F1 Tier 3</option>
+                    <option value="../standings/season-1/drivers/tier-4.html">F1 Tier 4</option>
+                    <option value="../standings/season-1/drivers/tier-5.html">F1 Tier 5</option>-->
+                    <option value="reserves.html">Reserves</option>
+                </select>
+                <script>
+                    function reset_options() {
+                        document.getElementById('links').options.length = 0;
+                        return true;
+                    }
+                  </script>
+                  <body onbeforeunload="reset_options()"></body>
+            </div>
+        </div>
+    </div>
+
+    <!--DRIVER BOX START // LEAGUE TEAMS-->
+    <div class="driver-list-container">
+
+        <!--Red Bull #1-->
+
+        <a class="driver-box red-bull" href="tier-1/thomas-vink.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #1e5bc6;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Red Bull.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Thomas</span>
+                    <span class="driver-name-last">Vink</span>
+                    <span class="driver-number">#3</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team hide">
+                        Oracle Red Bull Racing
+                    </span>
+                    <span class="driver-details-team show">
+                        Red Bull
+                    </span>
+                </div>
+            </div>
+        </a>
+        <!--Red Bull #2-->
+
+        <a class="driver-box red-bull" href="tier-1/kacper-grabiec.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #1e5bc6;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Red Bull.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Kacper</span>
+                    <span class="driver-name-last">Grabiec</span>
+                    <span class="driver-number">#7</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/poland.png" class="driver-details-flag">
+                        </div>
+                        Poland
+                    </span>
+                    <span class="driver-details-team hide">
+                        Oracle Red Bull Racing
+                    </span>
+                    <span class="driver-details-team show">
+                        Red Bull
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Mercedes #1-->
+
+        <a class="driver-box mercedes" href="tier-1/lukas-hendrych.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #6CD3BF;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Mercedes.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Lukáš</span>
+                    <span class="driver-name-last">Hendrych</span>
+                    <span class="driver-number">#19</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team hide">
+                        Mercedes-AMG Petronas F1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        Mercedes
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Mercedes #2-->
+
+        <a class="driver-box mercedes" href="tier-1/tim-verhoeven.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #6CD3BF;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Mercedes.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Tim</span>
+                    <span class="driver-name-last">Verhoeven</span>
+                    <span class="driver-number">#43</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/sweden.png" class="driver-details-flag">
+                        </div>
+                        Sweden
+                    </span>
+                    <span class="driver-details-team hide">
+                        Mercedes-AMG Petronas F1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        Mercedes
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Ferrari #1-->
+
+        <a class="driver-box ferrari" href="tier-1/emil-lundell.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #F91536;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Ferrari.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Emil</span>
+                    <span class="driver-name-last">Lundell</span>
+                    <span class="driver-number">#36</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/sweden.png" class="driver-details-flag">
+                        </div>
+                        Sweden
+                    </span>
+                    <span class="driver-details-team hide">
+                        Scuderia Ferrari
+                    </span>
+                    <span class="driver-details-team show">
+                        Ferrari
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Ferrari #2-->
+
+        <a class="driver-box ferrari" href="tier-1/michael-bubla.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #F91536;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Ferrari.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Michael</span>
+                    <span class="driver-name-last">Bubla</span>
+                    <span class="driver-number">#13</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team hide">
+                        Scuderia Ferrari
+                    </span>
+                    <span class="driver-details-team show">
+                        Ferrari
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--McLaren #1-->
+
+        <a class="driver-box mclaren" href="tier-1/anton-chebotarov.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #F58020;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/McLaren2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Anton</span>
+                    <span class="driver-name-last">Chebotarov</span>
+                    <span class="driver-number">#95</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/ukraine.png" class="driver-details-flag">
+                        </div>
+                        Ukraine
+                    </span>
+                    <span class="driver-details-team hide">
+                        McLaren Formula 1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        McLaren
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--McLaren #2-->
+
+        <a class="driver-box mclaren" href="tier-1/dallan-mcteer.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #F58020;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/McLaren2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-side">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/driver-images/DallanMcTeer1Full.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Dallan</span>
+                    <span class="driver-name-last">McTeer</span>
+                    <span class="driver-number">#32</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/usa.png" class="driver-details-flag">
+                        </div>
+                        United States
+                    </span>
+                    <span class="driver-details-team hide">
+                        McLaren Formula 1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        McLaren
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Aston Martin #1-->
+
+        <a class="driver-box aston-martin" href="tier-1/nedim-lemezan.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #358C75;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Astson Martin.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Nedim</span>
+                    <span class="driver-name-last">Lemezan</span>
+                    <span class="driver-number">#5</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/bosnia.png" class="driver-details-flag">
+                        </div>
+                        Bosnia
+                    </span>
+                    <span class="driver-details-team hide">
+                        Aston Martin Aramco Cognizant F1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        Aston Martin
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Aston Martin #2-->
+
+        <a class="driver-box aston-martin" href="tier-1/tony-hietala.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #358C75;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Astson Martin.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Tony</span>
+                    <span class="driver-name-last">Hietala</span>
+                    <span class="driver-number">#90</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/finland.png" class="driver-details-flag">
+                        </div>
+                        Finland
+                    </span>
+                    <span class="driver-details-team hide">
+                        Aston Martin Aramco Cognizant F1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        Aston Martin
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Alpine #1-->
+
+        <a class="driver-box alpine" href="tier-1/daniel-bodnar.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #2293D1;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Alpine.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Daniel</span>
+                    <span class="driver-name-last">Bodnár</span>
+                    <span class="driver-number">#80</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/slovakia.png" class="driver-details-flag">
+                        </div>
+                        Slovakia
+                    </span>
+                    <span class="driver-details-team hide">
+                        BWT Alpine F1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        Alpine
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Alpine #2-->
+
+        <a class="driver-box alpine" href="tier-1/justin-janson.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #2293D1;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Alpine.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Justin</span>
+                    <span class="driver-name-last">Janson</span>
+                    <span class="driver-number">#92</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team hide">
+                        BWT Alpine F1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        Alpine
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Williams #1-->
+
+        <a class="driver-box williams" href="tier-1/aleksi-kovero.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #37BEDD;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Williams.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Aleksi</span>
+                    <span class="driver-name-last">Kovero</span>
+                    <span class="driver-number">#7</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/finland.png" class="driver-details-flag">
+                        </div>
+                        Finland
+                    </span>
+                    <span class="driver-details-team hide">
+                        Williams Racing
+                    </span>
+                    <span class="driver-details-team show">
+                        Williams
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Williams #2-->
+
+        <a class="driver-box williams" href="tier-1/romeo-gagliotti.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #37BEDD;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Williams.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Romeo</span>
+                    <span class="driver-name-last">Gagliotti</span>
+                    <span class="driver-number">#19</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team hide">
+                        Williams Racing
+                    </span>
+                    <span class="driver-details-team show">
+                        Williams
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--AlphaTauri #1-->
+
+        <a class="driver-box alphatauri" href="tier-1/octavian-ursu.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #5E8FAA;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/AlphaTauri2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Octavian</span>
+                    <span class="driver-name-last">Ursu</span>
+                    <span class="driver-number">#8</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/romania.png" class="driver-details-flag">
+                        </div>
+                        Romania
+                    </span>
+                    <span class="driver-details-team hide">
+                        Scuderia AlphaTauri
+                    </span>
+                    <span class="driver-details-team show">
+                        AlphaTauri
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--AlphaTauri #2-->
+
+        <a class="driver-box alphatauri" href="tier-1/gabriel-rico.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #5E8FAA;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/AlphaTauri2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Gabriel</span>
+                    <span class="driver-name-last">Rico</span>
+                    <span class="driver-number">#88</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/spain.png" class="driver-details-flag">
+                        </div>
+                        Spain
+                    </span>
+                    <span class="driver-details-team hide">
+                        Scuderia AlphaTauri
+                    </span>
+                    <span class="driver-details-team show">
+                        AlphaTauri
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Alfa Romeo #1-->
+
+        <a class="driver-box alfa-romeo" href="tier-1/adam-modan.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #C92D4B;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Alfa Romeo.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Adam</span>
+                    <span class="driver-name-last">Modan</span>
+                    <span class="driver-number">#49</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/england.png" class="driver-details-flag">
+                        </div>
+                        England
+                    </span>
+                    <span class="driver-details-team hide">
+                        Alfa Romeo F1 Team Stake
+                    </span>
+                    <span class="driver-details-team show">
+                        Alfa Romeo
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Alfa Romeo #2-->
+
+        <a class="driver-box alfa-romeo" href="tier-1/ondrej-machac.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #C92D4B;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Alfa Romeo.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Ondřej</span>
+                    <span class="driver-name-last">Macháč</span>
+                    <span class="driver-number">#73</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team hide">
+                        Alfa Romeo F1 Team Stake
+                    </span>
+                    <span class="driver-details-team show">
+                        Alfa Romeo
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Haas #1-->
+
+        <a class="driver-box haas" href="tier-1/miska-heikkila.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #B6BABD;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Haas.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Miska</span>
+                    <span class="driver-name-last">Heikkilä</span>
+                    <span class="driver-number">#26</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/finland.png" class="driver-details-flag">
+                        </div>
+                        Finland
+                    </span>
+                    <span class="driver-details-team hide">
+                        MoneyGram Haas F1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        Haas
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--Haas #2-->
+
+        <a class="driver-box haas" href="tier-1/jack-grossart.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #B6BABD;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/Haas.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Jack</span>
+                    <span class="driver-name-last">Grossart</span>
+                    <span class="driver-number">#88</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/scotland.png" class="driver-details-flag">
+                        </div>
+                        Scotland
+                    </span>
+                    <span class="driver-details-team hide">
+                        MoneyGram Haas F1 Team
+                    </span>
+                    <span class="driver-details-team show">
+                        Haas
+                    </span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--DRIVER BOX END-->
+
+    <!--DRIVER BOX START // ESPORTS TEAMS-->
+    <div class="driver-list-container hide-main">
+
+        <!--FRC #1-->
+
+        <a class="driver-box frc" href="tier-1/michael-bubla.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #4dabea;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/FRC.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Michael</span>
+                    <span class="driver-name-last">Bubla</span>
+                    <span class="driver-number">#13</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team hide">
+                        Formula Racing Claret eSports
+                    </span>
+                    <span class="driver-details-team show">
+                        FRC eSports
+                    </span>
+                </div>
+            </div>
+        </a>
+        
+        <!--GS GAMING #1-->
+
+        <a class="driver-box gs-gaming" href="tier-1/thomas-vink.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #fce100;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/GS Gaming.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Thomas</span>
+                    <span class="driver-name-last">Vink</span>
+                    <span class="driver-number">#3</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team hide">
+                        GS Gaming
+                    </span>
+                    <span class="driver-details-team show">
+                        GS Gaming
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--V10 #1-->
+
+        <a class="driver-box v10" href="tier-1/aleksi-kovero.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #d500ff;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/V10.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Aleksi</span>
+                    <span class="driver-name-last">Kovero</span>
+                    <span class="driver-number">#7</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/finland.png" class="driver-details-flag">
+                        </div>
+                        Finland
+                    </span>
+                    <span class="driver-details-team hide">
+                        V10 Esports
+                    </span>
+                    <span class="driver-details-team show">
+                        V10 Esports
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--V10 #2-->
+
+        <a class="driver-box v10" href="tier-1/miska-heikkila.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #d500ff;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/V10.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Miska</span>
+                    <span class="driver-name-last">Heikkilä</span>
+                    <span class="driver-number">#26</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/finland.png" class="driver-details-flag">
+                        </div>
+                        Finland
+                    </span>
+                    <span class="driver-details-team hide">
+                        V10 Esports
+                    </span>
+                    <span class="driver-details-team show">
+                        V10 Esports
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--V10 #3-->
+
+        <a class="driver-box v10" href="tier-1/emil-lundell.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #d500ff;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/V10.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Emil</span>
+                    <span class="driver-name-last">Lundell</span>
+                    <span class="driver-number">#36</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/sweden.png" class="driver-details-flag">
+                        </div>
+                        Sweden
+                    </span>
+                    <span class="driver-details-team hide">
+                        V10 Esports
+                    </span>
+                    <span class="driver-details-team show">
+                        V10 Esports
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--V10 #4-->
+
+        <a class="driver-box v10" href="tier-1/adam-modan.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #d500ff;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/V10.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Adam</span>
+                    <span class="driver-name-last">Modan</span>
+                    <span class="driver-number">#49</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/england.png" class="driver-details-flag">
+                        </div>
+                        England
+                    </span>
+                    <span class="driver-details-team hide">
+                        V10 Esports
+                    </span>
+                    <span class="driver-details-team show">
+                        V10 Esports
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--V10 #5-->
+
+        <a class="driver-box v10" href="tier-1/ondrej-machac.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #d500ff;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/V10.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Ondřej</span>
+                    <span class="driver-name-last">Macháč</span>
+                    <span class="driver-number">#73</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team hide">
+                        V10 Esports
+                    </span>
+                    <span class="driver-details-team show">
+                        V10 Esports
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--V10 #6-->
+
+        <a class="driver-box v10" href="tier-1/anton-chebotarov.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #d500ff;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/V10.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Anton</span>
+                    <span class="driver-name-last">Chebotarov</span>
+                    <span class="driver-number">#95</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/ukraine.png" class="driver-details-flag">
+                        </div>
+                        Ukraine
+                    </span>
+                    <span class="driver-details-team hide">
+                        V10 Esports
+                    </span>
+                    <span class="driver-details-team show">
+                        V10 Esports
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--WOR #1-->
+
+        <a class="driver-box wor" href="tier-1/tim-verhoeven.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #dc0000;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/WOR.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Tim</span>
+                    <span class="driver-name-last">Verhoeven</span>
+                    <span class="driver-number">#43</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/sweden.png" class="driver-details-flag">
+                        </div>
+                        Sweden
+                    </span>
+                    <span class="driver-details-team hide">
+                        WOR Esports
+                    </span>
+                    <span class="driver-details-team show">
+                        WOR Esports
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--WOR #2-->
+
+        <a class="driver-box wor" href="tier-1/tony-hietala.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #dc0000;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/WOR.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Tony</span>
+                    <span class="driver-name-last">Hietala</span>
+                    <span class="driver-number">#90</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/finland.png" class="driver-details-flag">
+                        </div>
+                        Finland
+                    </span>
+                    <span class="driver-details-team hide">
+                        WOR Esports
+                    </span>
+                    <span class="driver-details-team show">
+                        WOR Esports
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #1-->
+
+        <a class="driver-box no-team" href="tier-1/nedim-lemezan.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Nedim</span>
+                    <span class="driver-name-last">Lemezan</span>
+                    <span class="driver-number">#5</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/bosnia.png" class="driver-details-flag">
+                        </div>
+                        Bosnia
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #2-->
+
+        <a class="driver-box no-team" href="tier-1/kacper-grabiec.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Kacper</span>
+                    <span class="driver-name-last">Grabiec</span>
+                    <span class="driver-number">#7</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/poland.png" class="driver-details-flag">
+                        </div>
+                        Poland
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #3-->
+
+        <a class="driver-box no-team" href="tier-1/octavian-ursu.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Octavian</span>
+                    <span class="driver-name-last">Ursu</span>
+                    <span class="driver-number">#8</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/romania.png" class="driver-details-flag">
+                        </div>
+                        Romania
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #4-->
+
+        <a class="driver-box no-team" href="tier-1/romeo-gagliotti.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Romeo</span>
+                    <span class="driver-name-last">Gagliotti</span>
+                    <span class="driver-number">#19</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #5-->
+
+        <a class="driver-box no-team" href="tier-1/lukas-hendrych.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Lukáš</span>
+                    <span class="driver-name-last">Hendrych</span>
+                    <span class="driver-number">#19</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/czech.png" class="driver-details-flag">
+                        </div>
+                        Czech Republic
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #6-->
+
+        <a class="driver-box no-team" href="tier-1/dallan-mcteer.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-side">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/driver-images/DallanMcTeer1Full.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Dallan</span>
+                    <span class="driver-name-last">McTeer</span>
+                    <span class="driver-number">#32</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/usa.png" class="driver-details-flag">
+                        </div>
+                        United States
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #7-->
+
+        <a class="driver-box no-team" href="tier-1/daniel-bodnar.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Daniel</span>
+                    <span class="driver-name-last">Bodnár</span>
+                    <span class="driver-number">#80</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/slovakia.png" class="driver-details-flag">
+                        </div>
+                        Slovakia
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #8-->
+
+        <a class="driver-box no-team" href="tier-1/jack-grossart.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Jack</span>
+                    <span class="driver-name-last">Grossart</span>
+                    <span class="driver-number">#88</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/scotland.png" class="driver-details-flag">
+                        </div>
+                        Scotland
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #9-->
+
+        <a class="driver-box no-team" href="tier-1/gabriel-rico.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Gabriel</span>
+                    <span class="driver-name-last">Rico</span>
+                    <span class="driver-number">#88</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/spain.png" class="driver-details-flag">
+                        </div>
+                        Spain
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!--N/A #10-->
+
+        <a class="driver-box no-team" href="tier-1/justin-janson.html">
+            <div class="driver-box-background">
+                <div class="driver-background-team-color" style="background-color: #c34b1b;">
+                </div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="../img/logos/teams/free-agent.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-box-image-container-silhouette">
+                <div class="driver-box-image">
+                    <div class="driver-image">
+                        <picture class="driver-picture">
+                            <img class="driver-profile-picture" src="../img/misc/silhouette2.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="driver-info-box">
+                <div class="driver-info-name">
+                    <span class="driver-name-first">Justin</span>
+                    <span class="driver-name-last">Janson</span>
+                    <span class="driver-number">#92</span>
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="../img/nations/netherlands.png" class="driver-details-flag">
+                        </div>
+                        Netherlands
+                    </span>
+                    <span class="driver-details-team hide">
+                        N/A
+                    </span>
+                    <span class="driver-details-team show">
+                        N/A
+                    </span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--DRIVER BOX END-->
+
+    <footer>
+        <div class="footer-socials">
+            <div class="socials-icons">
+                <a href="https://discord.gg/FwJ5JuAHNx" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/discord.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/virtualformulaseries.official/" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/instagram.png">
+                    </div>
+                </a>
+                <a href="https://www.twitter.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/twitter.png">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/youtube.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>VIRTUAL FORMULA SERIES 2023, ALL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+</html>

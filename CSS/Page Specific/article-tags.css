@@ -1,0 +1,221 @@
+.add-margin {
+    margin: 75px 0 0 0;
+}
+.article-tags-header {
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+    border-bottom: solid 1px #c34b1b;
+    z-index: 4;
+    display: flex;
+    position: relative;
+}
+.article-tags-header-mclaren {
+    background-image: url(../../img/articlePictures/Qatar.png);
+    background-position-y: 60%;
+    background-position-x: 50%;
+}
+.article-tags-header-ferrari {
+    background-image: url(../../img/articlePictures/Ferrari\ Imola\ T2.png);
+    background-position-y: 57%;
+    background-position-x: 50%;
+}
+.article-tags-header-red-bull {
+    background-image: url(../../img/articlePictures/Red\ Bull\ Austria\ 2.png);
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+.article-tags-header-haas {
+    background-image: url(../../img/articlePictures/Haas\ Vegas\ 2\ T2.png);
+    background-position-y: 45%;
+    background-position-x: 50%;
+}
+.article-tags-header-mercedes {
+    background-image: url(../../img/articlePictures/MercedesSilverstone.png);
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+.article-tags-header-aston-martin {
+    background-image: url(../../img/articlePictures/Aston\ Martin\ Spain.png);
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+.article-tags-header-alphatauri {
+    background-image: url(../../img/articlePictures/AlphaTauri\ Japan\ 1.png);
+    background-position-y: 45%;
+    background-position-x: 50%;
+}
+.article-tags-header-alfa-romeo {
+    background-image: url(../../img/articlePictures/Alfa\ Romeo\ China.png);
+    background-position-y: 45%;
+    background-position-x: 50%;
+}
+.article-tags-header-alpine {
+    background-image: url(../../img/articlePictures/Alpine\ France.png);
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+.article-tags-header-williams {
+    background-image: url(../../img/articlePictures/Williams\ Miami\ 2.png);
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+.article-tags-header-text-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.header-text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: table;
+}
+.article-tags-header-text {
+    height: 7rem;
+    line-height: 5.95rem;
+    letter-spacing: -0.3rem;
+    font-size: 8.5rem; 
+    font-weight: 700;
+    z-index: 1;
+}
+.red-bull .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #3671C6 100%);
+    width: 100%;
+    opacity: .24;
+}
+.mercedes .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #6CD3BF 100%);
+    width: 100%;
+    opacity: .24;
+}
+.ferrari .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #F91536 100%);
+    width: 100%;
+    opacity: .24;
+}
+.mclaren .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #F58020 100%);
+    width: 100%;
+    opacity: 0.24;
+}
+.aston-martin .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #358C75 100%);
+    width: 100%;
+    opacity: .24;
+}
+.alpine .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #2293D1 100%);
+    width: 100%;
+    opacity: .24;
+}
+.williams .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #37BEDD 100%);
+    width: 100%;
+    opacity: .24;
+}
+.alphatauri .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #5E8FAA 100%);
+    width: 100%;
+    opacity: .24;
+}
+.alfa-romeo .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #C92D4B 100%);
+    width: 100%;
+    opacity: .24;
+}
+.haas .article-tags-header:before {
+    content: "";
+    background: #000 linear-gradient(90deg, #000 15%, #B6BABD 100%);
+    width: 100%;
+    opacity: .24;
+}
+.header-driver-image-container {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: auto;
+    z-index: 2;
+}
+.header-driver-image {
+    height: 100%;
+}
+.header-driver-profile-container {
+    position: absolute;
+    right: 5rem;
+    height: 100%;
+    z-index: 2;
+}
+.header-driver-profile-link {
+    background-color: #18191A;
+    border: 1px solid #c34b1b;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    line-height: 1;
+    transition: .2s ease-in-out;
+}
+.driver-link-arrow-container {
+    position: relative;
+    display: flex;
+    margin: 0 0 0 .5rem;
+    height: 1.7rem;
+}
+.driver-link-arrow {
+    display: block;
+}
+.header-driver-profile-link:hover {
+    color: #c34b1b;
+}
+@media (max-width: 62.49em) {
+    .article-tags-header {
+        height: 17.5rem;
+        background-size: 170%;
+    }
+    .article-tags-header-text {
+        font-size: 5.5rem;
+    }
+}
+@media (max-width: 40em) {
+    .article-tags-header {
+        height: 9rem;
+        background-size: 180%;
+    }
+    .article-tags-header-text {
+        font-size: 3.2rem;
+    }
+    .article-tags-header-mclaren {
+        background-position-x: 35%;
+    }
+    .header-driver-image-container-side {
+        left: -.5rem;
+    }
+    .hide {
+        display: none;
+    }
+}
+@media (max-width: 22.5em) {
+    .add-margin {
+        margin: 60px 0 0 0;
+    }
+    .article-tags-header {
+        height: 7.5rem;
+    }
+    .article-tags-header-text {
+        font-size: 2.5rem;
+    }
+}

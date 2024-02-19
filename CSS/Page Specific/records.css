@@ -1,0 +1,459 @@
+.records-bar-container {
+    height: 9rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    border-bottom: solid 1px #c34b1b;
+    background: #000 linear-gradient(90deg, #000 20%, #c34b1b 350%);
+}
+.records-sort-by-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.records-menu {
+    background-color: transparent;
+    border: solid 3px #5A5A5A;
+    border-radius: 30px;
+    color: #fff;
+    margin: .75rem 0 0 2rem;
+    padding: .5rem 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    width: 12rem;
+    min-width: 12rem;
+}
+.records-menu:first-of-type {
+    margin: .75rem 0 0 0;
+}
+.active {
+    background-color: #5A5A5A;
+    border-color: #c34b1b;
+    transition: .15s ease-in-out;
+}
+.selection-table {
+    margin: 1.5rem 0;
+}
+.hide-main {
+    display: none!important;
+}
+.records-table, .container-main {
+    padding: 0 18.75vw;
+    height: auto;
+    display: flex;
+}
+.container-main {
+    display: block;
+}
+.records-table-box {
+    width: 100%;
+    table-layout: fixed;
+    border-top: 2px solid #c0c0c0;
+    border-right: 2px solid #c0c0c0;
+    border-left: 2px solid #c0c0c0;
+    animation: a .5s ease-in-out;
+    box-shadow: 0.2rem 0.1rem 2.6rem rgba(0,0,0,.05);
+    position: relative;
+    background: #000;
+    margin-bottom: 10vh;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.records-table-box thead {
+    background: #c34b1b;
+}
+.records-table-box thead .records-table-box-header {
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    height: 2rem;
+    padding: 0 1rem 0 0.5rem;
+}
+.records-table-box thead .records-position{
+    width: 5rem;
+    text-align: center;
+}
+.records-table-box thead .records-driver {
+    text-align: center;
+    width: 30rem;
+}
+.records-table-box thead .records-stat-large {
+    text-align: right;
+    width: 5rem;
+}
+.records-table-box thead .records-stat-small {
+    text-align: right;
+    width: 4rem;
+}
+.records-table-box tbody .records-table-row .records-table-cell-position {
+    text-align: center;
+}
+.records-table-box tbody .records-table-row .records-table-cell {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 1rem;
+}
+td, th {
+    padding: 0;
+}
+.records-table-box tbody .records-table-row .records-table-cell-driver {
+    padding: 0 1rem 0 0;
+}
+.records-table-driver-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.records-table-driver-details .records-driver-image-container {
+    height: 5rem;
+    overflow: hidden;
+    width: 7.5rem;
+    position: relative;
+}
+.records-driver-name-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.records-driver-name {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+    text-align: left;
+}
+.records-table-row {
+    height: 5rem;
+    border-right: 2px solid #c0c0c0;
+    border-bottom: 2px solid #c0c0c0;
+}
+.records-table-box tbody .records-table-row .records-table-cell-full-name, .records-table-box tbody .records-table-row .records-table-cell-number {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #c34b1b;
+    display: block;
+    min-width: 3.5rem;
+    padding: 0 0 0 1.5rem;
+}
+.records-table-box tbody .records-table-row .records-table-cell-full-name {
+    color: #fff;
+    display: block;
+}
+.records-driver-link {
+    color: inherit;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+.records-table-box tbody .records-table-flag {
+    height: 1.8rem;
+    border: 0.1rem;
+    border-radius: 0.4rem;
+}
+img {
+    max-width: 100%;
+    border: 0;
+}
+.records-table-box tbody .records-table-row .records-table-cell-team {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+}
+.records-table-box tbody .records-table-row .records-table-cell-points {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
+.records-table-box tbody .records-table-row .p1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #FFD700;
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
+.records-table-box tbody .records-table-row .p2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #C0C0C0;
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
+.records-table-box tbody .records-table-row .p3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #CD7F32;
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
+.records-table-box tbody .records-table-row .relegation {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #FF0000;
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
+.records-table-box tbody .records-table-row .promotion {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #03b11f;
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
+.records-table-cell-team-free-agent-container {
+    height: 2rem;
+    width: 2rem;
+}
+.records-table-cell-team-free-agent {
+    height: 100%;
+}
+.records-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+.inside-wrapper {
+    width: 100%;
+}
+.menu-container {
+    overflow: scroll;
+    overflow-y: hidden;
+    width: 95%;
+    position: relative;
+}
+.records-wrapper {
+    display: flex;
+}
+.menu-container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.menu-container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.stats-not-available {
+    color: #c34b1b;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.stats-not-available-container {
+    border: none;
+}
+@media (max-width: 62.49em) {
+    .records-table-box thead .records-position {
+        width: 3rem;
+        text-align: left;
+    }
+    .records-table-box thead .records-table-box-header {
+        padding: 0 1rem 0 1rem;
+        font-size: .8rem;
+    }
+    .records-table-box thead .records-driver-team {
+        display: flex;
+        align-items: center;
+    }
+    .records-table-box thead .driver .records-table-box thead .records-driver-team {
+        width: auto;
+        text-align: left;
+        padding-left: 7rem;
+    }
+    .records-table-box thead .records-driver-team-box {
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    .records-table-row {
+        height: 4rem;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-driver {
+        padding: 0;
+    }
+    .records-table-driver-details {
+        overflow: hidden;
+        width: 100%;
+    }
+    .records-table-driver-details .records-driver-image-container {
+        padding: 0 0.5rem 0 0;
+        width: 5.3rem;
+        height: 4rem;
+        min-width: 5.3rem;
+        min-height: 4rem;
+        position: relative;
+    }
+    .hide {
+        display: none;
+    }
+    .records-driver-name-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 70%;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-full-name, .records-table-box tbody .records-table-row .records-table-cell-number {
+        font-size: 1rem;
+        min-width: 0;
+        padding: 0 0.5rem 0 0;
+    }
+    .records-table-box tbody .records-table-flag {
+        height: .8rem;
+        border-radius: 0.2rem;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-team {
+        font-size: .9rem;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 70%;
+        float: left;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-points {
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-points-p1 {
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-points-p2 {
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-points-p3 {
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-points .relegation {
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-points .promotion {
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+    .records-table-box thead .records-stat-small {
+        width: 3rem;
+        padding: 0 .5rem 0 .5rem;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-position {
+        font-size: 1.1rem;
+        padding: 0;
+    }
+    .records-table-box thead .driver-team-box {
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    .records-table-box thead .driver .records-table-box thead .driver-team {
+        width: auto;
+        text-align: left;
+        padding-left: 7rem;
+    }
+    .records-championship-bar-container {
+        height: 4rem;
+    }
+    .championship-menu {
+        border-radius: 10px;
+        margin: 0 0 0 1rem;
+        padding: .5rem;
+        font-size: .8rem;
+        width: 10rem;
+    }
+    .records-menu {
+        border-radius: 10px;
+        margin: 0 0 0 1rem;
+        padding: .5rem;
+        font-size: .8rem;
+        min-width: 6.25rem;
+    }
+    .selection-container-standings {
+        min-height: 3.5rem!important;
+    }
+    .records-bar-container {
+        height: 6rem;
+    }
+    .records-table-cell-team-free-agent-container {
+        height: 1rem;
+        width: 1rem;
+    }
+    .records-title-container {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0 0 1rem 0;
+    }
+    .records-table-box thead .records-stat-large {
+        width: 4rem;
+    }
+    .menu-container {
+        max-width: 80%;
+    }
+    .records-sort-by-title {
+        font-size: 1.5rem;
+        display: block;
+        position: relative;
+        top: -.45rem;
+    }
+    .records-menu:first-of-type {
+        margin: 0 0 0 0;
+    }
+}
+@media (max-width: 83em) {
+    .selection-table, .records-table, .container-main {
+        padding: 0 1.375rem;
+    }
+}
+@media (max-width: 40em) {
+    .stats-not-available {
+        font-size: 1.75rem;
+    }
+}
+@media (max-width: 22.5em) {
+    .selection-table, .records-table, .container-main{
+        padding: 0 .6875rem;
+    }
+    .records-table-driver-details .records-driver-image-container {
+        display: none;
+    }
+    .records-driver-name-container {
+        margin-left: 0;
+        width: 100%;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-number, .records-table-box tbody .records-table-row .records-table-cell-full-name {
+        font-size: .9rem;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-team {
+        font-size: .7rem;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-position {
+        font-size: 1rem;
+    }
+    .records-table-box tbody .records-table-row .records-table-cell-points {
+        font-size: 1rem;
+    }
+    .records-championship-bar-container {
+        height: 3rem;
+        justify-content: space-evenly;
+    }
+    .records-title-container {
+        font-size: 1.5rem;
+        margin: 0 0 .75rem 0;
+    }
+    .stats-not-available {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,128 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+}
+.BackgroundImg {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../../img/articlePictures/Singapore.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 70%;
+    background-position-x: 50%;
+}
+div.sectiontitle {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    width: 100%;
+}
+span#title {
+    font-size: 5.625em;
+    font-weight: 800;
+    text-shadow: 0 0 7px #000;
+}
+span#europe {
+    font-size: 1.875em;
+    font-weight: 650;
+    text-shadow: 0 0 5px #000;
+}
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    background-color: #c34b1b;
+    padding: 0.67em 0;
+    font-size: 3.125rem;
+    width: 100%;
+    height: 185%;
+    text-align: center;
+}
+h2 {
+    color: #fff;
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+
+}
+h6 {
+    color: #fff;
+    font-size: 1.875rem;
+    padding-bottom: 3px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.page-title {
+    margin-top: 75px;
+}
+@media (max-width: 62.49em) {
+    span#title {
+        font-size: 12vw;
+        font-weight: 800;
+        text-shadow: 0 0 7px #c34b1b;
+    }
+    span#europe {
+        font-size: 4.5vw;
+        font-weight: 650;
+        text-shadow: 0 0 5px #c34b1b;
+        padding: 0 1.375rem;
+    }
+    .BackgroundImg {
+        background-position-x: 40%;
+    }
+    h1 {
+        font-size: 32px;
+        padding: .25em 0;
+    }
+    h1::first-line {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 3.5vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    h6 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    .hide {
+        display: none;
+    }
+}
+@media (min-width: 62.49em) {
+    .show {
+        display: none!important;
+    }
+}
+@media (max-width: 22.5em) {
+    .page-title {
+        margin-top: 60px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    h1::first-line {
+        font-size: 27px;
+    }
+    h6 {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+}

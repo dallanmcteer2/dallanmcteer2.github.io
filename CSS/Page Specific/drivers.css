@@ -1,0 +1,404 @@
+.driver-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 2.4rem 18.75vw;
+    gap: 0.8rem;
+}
+.driver-box-background, .driver-background-team-color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.driver-box-background {
+    background-color: #000;
+}
+.driver-background-team-color {
+    left: 0;
+    top: 0;
+    opacity: .32;
+}
+.driver-background-team-logo {
+    position: absolute;
+    opacity: .24;
+    height: 70%;
+    width: auto;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.driver-background-team-gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.driver-background-team-gradient::before {
+    background: radial-gradient(transparent,#18191A 140%);
+}
+.driver-background-team-gradient::after { 
+    background: radial-gradient(transparent, #000 140%);
+}
+.driver-background-team-gradient::after, .driver-background-team-gradient::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 500;
+}
+.driver-box {
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    background-color: #000;
+    justify-content: space-between;
+    text-decoration: none;
+    overflow: hidden;
+    height: 20rem;
+    width: 48%;
+}
+.red-bull, .mercedes, .ferrari, .mclaren, .aston-martin, .alpine, .williams, .alphatauri, .alfa-romeo, .haas, .abs, .ams, .frc, .gs-gaming, .v10, .wor, .no-team {
+    border-right: solid 2px #5A5A5A;
+    border-bottom: solid 2px #5A5A5A;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.4s;
+}
+.red-bull:hover {
+    border-color: #1e5bc6;
+}
+.mercedes:hover {
+    border-color: #6CD3BF;
+}
+.ferrari:hover {
+    border-color: #F91536;
+}
+.mclaren:hover {
+    border-color: #F58020;
+}
+.aston-martin:hover {
+    border-color: #294643;
+}
+.alpine:hover {
+    border-color: #2293D1;
+}
+.williams:hover {
+    border-color: #37BEDD;
+}
+.alphatauri:hover {
+    border-color: #5E8FAA;
+}
+.alfa-romeo:hover {
+    border-color: #C92D4B;
+}
+.haas:hover {
+    border-color: #B6BABD;
+}
+.abs:hover {
+    border-color: #0484ef;
+}
+.ams:hover {
+    border-color: #00e100;
+}
+.frc:hover {
+    border-color: #4dabea;
+}
+.gs-gaming:hover {
+    border-color: #fce100;
+}
+.v10:hover {
+    border-color: #2d00ff /*#d500ff*/;
+}
+.wor:hover {
+    border-color: #dc0000;
+}
+.no-team:hover {
+    border-color: #c34b1b;
+}
+.driver-box:hover .driver-background-team-logo {
+    scale: 1.06;
+    transition: 0.4s;
+}
+.driver-box:not(:hover) .driver-background-team-logo {
+    transition: 0.4s;
+}
+.driver-box-image-container-silhouette, .driver-box-image-container, .driver-box-image-container-side {
+    display: flex;
+    order: 3;
+    z-index: 499;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 35rem;
+    width: 19rem;
+    height: 19rem;
+    max-height: 17.2rem;
+    overflow: hidden;
+    text-align: right;
+}
+.driver-box-image-container, .driver-box-image-container-side {
+    max-height: none;
+}
+.driver-box-image-container-side {
+    right: -2rem;
+}
+.driver-box-image {
+    width: 100%;
+}
+.driver-image {
+    width: 100%;
+    height: 100%;
+}
+.driver-profile-picture {
+    bottom: 0;
+    position: relative;
+}
+.driver-info-box {
+    width: 100%;
+    padding: 1.6rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: relative;
+    z-index: 500;
+    min-height: 14.2rem;
+}
+.driver-info-name {
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 2.2rem;
+    display: flex;
+    flex-flow: column;
+}
+.driver-details-box {
+    display: flex;
+    flex-flow: row;
+    gap: 0.8rem;
+    z-index: 501;
+}
+.driver-name-first {
+    font-size: 2.1rem;
+}
+.driver-name-last {
+    font-size: 3.3rem;
+}
+.driver-number {
+    font-size: 2.7rem;
+}
+.drivers-list-bar-container {
+    height: 9rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: solid 1px #c34b1b;
+    background: #000 linear-gradient(90deg, #000 20%, #c34b1b 350%);
+    flex-flow: column;
+}
+.drivers-menu {
+    background-color: transparent;
+    border: solid 3px #5A5A5A;
+    border-radius: 30px;
+    color: #fff;
+    margin: .75rem 0 0 2rem;
+    padding: .5rem 1rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    width: 12rem;
+}
+.drivers-menu:first-of-type {
+    margin: .75rem 0 0 0;
+}
+.drivers-list-sort-by-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+@media (max-width: 62.49em) {
+    .driver-name-first {
+        font-size: 1.05rem;
+    }
+    .driver-name-last {
+        font-size: 1.65rem;
+    }
+    .driver-number {
+        font-size: 1.35rem;
+    }
+}
+.driver-details-nationality, .driver-details-team {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #fff;
+    opacity: .8;
+    display: flex;
+    align-items: center;
+}
+.driver-details-flag-box {
+    height: 1.8rem;
+    width: 2.7rem;
+    border-radius: 0.4rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+.driver-details-flag {
+    border-radius: 0.4rem;
+}
+.driver-details-team {
+    gap: 0.8rem;
+    min-width: 50%;
+}
+.driver-details-team::before {
+    content: "";
+    display: block;
+    width: 0.05rem;
+    height: 100%;
+    background-color: #fff;
+    opacity: .8;
+    pointer-events: none;
+}
+.selection-container-drivers {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    position: relative;
+    min-height: 5rem;
+    display: flex;
+    flex-flow: row;
+}
+.select-box-drivers {
+    font-size: 1.3vh;
+    line-height: 1.2rem;
+    color: #fff;
+    pointer-events: none;
+    position: absolute;
+    top: 1.1rem;
+}
+.reserves {
+    border-right: solid 2px #5A5A5A;
+    border-bottom: solid 2px #5A5A5A;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.4s;
+}
+.reserves:hover {
+    border-color: #03b11f;
+}
+@media (max-width: 83em) {
+    .driver-list-container {
+        padding: 1.5rem 1.375rem;
+    }
+}
+@media (max-width: 62.49em) {
+    .selection-container-drivers {
+        flex-flow: column;
+        min-height: 3.5rem;
+    }
+    .select-box-drivers {
+        line-height: 0;
+    }
+    .driver-box {
+        width: 100%;
+        height: 8rem;
+    }
+    .driver-box-background {
+        min-height: 0;
+    }
+    .driver-box-image-container-silhouette {
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 45%;
+    }
+    .driver-box-image-container {
+        top: 0;
+        right: -.5rem;
+        height: 100%;
+        width: 45%;
+    }
+    .driver-box-image-container-side {
+        bottom: 0;
+        right: -1rem;
+        height: 105%;
+        width: 45%;
+    }
+    .driver-profile-picture {
+        width: 9rem;
+    }
+    .driver-details-flag-box {
+        height: 1.4rem;
+        width: 2.1rem;
+        border-radius: 0.3rem;
+    }
+    .driver-info-name {
+        margin-bottom: 1rem;
+    }
+    .driver-details-nationality, .driver-details-team {
+        font-size: .7rem;
+    }
+    .driver-info-box {
+        min-height: 0;
+        padding: 0.5rem;
+    }
+    .driver-background-team-gradient::before {
+        background: radial-gradient(transparent,#18191A 155%);
+    }
+    .driver-background-team-gradient::after { 
+        background: radial-gradient(transparent, #000 155%);
+    }
+    .drivers-list-bar-container {
+        height: 6rem;
+    }
+    .drivers-menu {
+        border-radius: 10px;
+        margin: 0 0 0 1rem;
+        padding: .5rem;
+        font-size: .8rem;
+        width: 6.5rem;
+    }
+    .drivers-menu:first-of-type {
+        margin: 0 0 0 0;
+    }
+    .drivers-list-sort-by-title {
+        font-size: 1.5rem;
+        display: block;
+        position: relative;
+        top: -.45rem;
+    }
+}
+@media (max-width: 22.5em) {
+    .driver-box-image-container-silhouette {
+        bottom: 0;
+        top: auto;
+        height: 6rem;
+        width: 6rem;
+    }
+    .driver-box-image-container {
+        bottom: 0;
+        top: auto;
+        height: 6rem;
+        width: 6rem;
+    }
+    .driver-box-image-container-side {
+        bottom: 0;
+        top: auto;
+        right: -.5rem;
+        height: 7rem;
+        width: 7rem;
+    }
+    .driver-details-nationality, .driver-details-team {
+        line-height: 1.2;
+    }
+}

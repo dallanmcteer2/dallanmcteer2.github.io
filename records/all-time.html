@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFS Records | All Time</title>
+    <link rel="icon" type="png" href="../img/misc/favicon.png">
+    <link rel="stylesheet" href="../CSS/Main CSS/stylesindex.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/header.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/records.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/standings.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/sidebar.css">
+    <script defer="defer" src="../JS/records.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+    <div id="mainHeader">
+        <header class="header">
+            <div class="logo">
+                <a href="/">
+                    <img src="../img/misc/VFSLogoWhite.png" alt="VFS Logo">
+                </a>
+            </div>
+        </header>
+    </div>
+    </nav>
+    <div class="navigation">
+        <label class="sidebar-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <a class="sidebar-links" href="../all-news.html">
+                    <h5 class="sidebar-links-text">Articles</h5>
+                </a>
+                <a class="sidebar-links" href="../calendar.html">
+                    <h5 class="sidebar-links-text">Calendar</h5>
+                </a>
+                <a class="sidebar-links" href="../standings/season-1/tier-1.html">
+                    <h5 class="sidebar-links-text">Standings</h5>
+                </a>
+                <a class="sidebar-links" href="../drivers/tier-1.html">
+                    <h5 class="sidebar-links-text">Drivers</h5>
+                </a>
+                <a class="sidebar-links" href="../records/all-time.html">
+                    <h5 class="sidebar-links-text">Records</h5>
+                </a>
+                <!--<a class="sidebar-links" href="../archives.html">
+                    <h5 class="sidebar-links-text">Archives</h5>
+                </a>
+                <a class="sidebar-links" href="../about-us.html">
+                    <h5 class="sidebar-links-text">About Us</h5>
+                </a>-->
+                <a class="sidebar-links" href="../contact-us.html">
+                    <h5 class="sidebar-links-text">Contact Us</h5>
+                </a>
+                <a class="sidebar-links" href="../register.html">
+                    <h5 class="sidebar-links-text">Register</h5>
+                </a>
+            </nav>
+        </aside>
+    </div>
+    <div class="page-title">
+        <div>
+            <h1>VFS Records</h1>
+        </div>
+    </div>
+    <div class="records-bar-container">
+        <div class="records-sort-by-title">Sort Drivers By:</div>
+        <div class="menu-container">
+            <div class="inside-wrapper">
+                <div class="records-wrapper">
+                    <button class="records-menu active" id="btn-1" title="Race Wins">Wins</button>
+                    <button class="records-menu" id="btn-1" title="Poduims">Podiums</button>
+                    <button class="records-menu" id="btn-2" title="Pole Positions">Poles</button>
+                    <button class="records-menu" id="btn-3" title="Fastest Laps">
+                        <div class="hide2">Fastest Laps</div>
+                        <div class="show2">FLs</div>
+                    </button>
+                    <button class="records-menu" id="btn-4" title="Points">Points</button>
+                    <button class="records-menu" id="btn-5" title="Races">Races</button>
+                    <button class="records-menu" id="btn-6" title="Drivers' Championships">Drivers' Titles</button>
+                    <button class="records-menu" id="btn-7" title="Constructors' Championships">Teams' Titles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="selection-table">
+        <div class="selection-container-standings"> 
+            <div class="selections">
+                <div class="select-box-standings">Category</div>
+                <select id="links" size="1" onchange="window.location.href=this.value" class="select-container">
+                    <option selected value="all-time.html">All Time</option>
+                    <option value="tier-1.html">F1 Tier 1</option>
+                    <option value="tier-2.html">F1 Tier 2</option>
+                </select>
+            </div>
+            <script>
+                function reset_options() {
+                    document.getElementById('links').options.length = 0;
+                    return true;
+                }
+            </script>
+            <body onbeforeunload="reset_options()"></body>
+        </div>
+    </div>
+    <div class="records-table">
+        <div>
+            <div>
+                <!--WINS RECORDS TABLE START-->
+                <div class="records-title-container" id="title-1">
+                    <div class="records-title">F1 All Time Wins</div>
+                </div>
+                <table class="records-table-box" id="records-1">
+                    <thead>
+                        <tr>
+                            <th class="records-table-box-header records-position">Pos.</th>
+                            <th class="records-table-box-header records-driver-team show">
+                                <span class="records-table-box-header records-driver-team-box">Driver/Team</span>
+                            </th>
+                            <th class="records-table-box-header records-driver hide">Driver</th>
+                            <th class="records-table-box-header records-team hide">Team</th>
+                            <th class="records-table-box-header records-stat-small">Wins</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--DRIVER #1 // OCTAVIAN URSU-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #4e7c9b;">1</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">8</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Octavian Ursu
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">8</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Octavian Ursu
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">8</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    O. Ursu
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">AlphaTauri</td>
+                            <td class="records-table-cell records-table-cell-points p1">13</td>
+                        </tr>
+
+                        <!--DRIVER #2 // THOMAS VINK-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #1e5bc6;">2</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">3</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                    Thomas Vink
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">3</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                    Thomas Vink
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">3</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                    T. Vink
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Red Bull</td>
+                            <td class="records-table-cell records-table-cell-points p2">11</td>
+                        </tr>
+
+                        <!--DRIVER #3 // DALLAN MCTEER-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #f58020;">3</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/driver-images/DallanMcTeer1.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">32</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                    Dallan McTeer
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/usa.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">32</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                    Dallan McTeer
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/usa.png.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">32</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                    D. McTeer
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/usa.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">McLaren</td>
+                            <td class="records-table-cell records-table-cell-points p3">10</td>
+                        </tr>
+
+                        <!--DRIVER #4 // ADAM MODAN-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #b12039;">4</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">49</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                    Adam Modan
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">49</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                    Adam Modan
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Alfa Romeo</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">49</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                    A. Modan
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Alfa Romeo</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Alfa Romeo</td>
+                            <td class="records-table-cell records-table-cell-points">5</td>
+                        </tr>
+
+                        <!--DRIVER #5 // EMIL LUNDELL-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #ed1c24;">5</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">36</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                    Emil Lundell
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/sweden.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">36</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                    Emil Lundell
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/sweden.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Ferrari</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">36</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                    E. Lundell
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/sweden.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Ferrari</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Ferrari</td>
+                            <td class="records-table-cell records-table-cell-points">4</td>
+                        </tr>
+
+                        <!--DRIVER #6 // ANTON CHEBOTAROV-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #f58020;">6</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">95</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                    Anton Chebotarov
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/ukraine.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">95</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                    Anton Chebotarov
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/ukraine.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">95</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                    A. Chebotarov
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/ukraine.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">McLaren</td>
+                            <td class="records-table-cell records-table-cell-points">4</td>
+                        </tr>
+
+                        <!--DRIVER #7 // ROMEO GAGLIOTTI-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #37bedd;">7</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">19</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/romeo-gagliotti.html" title="View Driver Profile">
+                                                    Romeo Gagliotti
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">19</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/romeo-gagliotti.html" title="View Driver Profile">
+                                                    Romeo Gagliotti
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Williams</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">19</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/romeo-gagliotti.html" title="View Driver Profile">
+                                                    R. Gagliotti
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Williams</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Williams</td>
+                            <td class="records-table-cell records-table-cell-points">4</td>
+                        </tr>
+
+                        <!--DRIVER #8 // ANTONIO BRANCATI-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #c34b1b;">8</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Antonio Brancati
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/italy.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Antonio Brancati
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/italy.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    A. Brancati
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/italy.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">
+                                <div class="records-table-cell-team-free-agent-container">
+                                    <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-points">3</td>
+                        </tr>
+
+                        <!--DRIVER #9 // LUCA STEVENS-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #1e5bc6;">9</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">40</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-2/luca-stevens.html" title="View Driver Profile">
+                                                    Luca Stevens
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">40</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-2/luca-stevens.html" title="View Driver Profile">
+                                                    Luca Stevens
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">40</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-2/luca-stevens.html" title="View Driver Profile">
+                                                    L. Stevens
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Red Bull</td>
+                            <td class="records-table-cell records-table-cell-points">2</td>
+                        </tr>
+
+                        <!--DRIVER #10 // LEON MAASKANT-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #c34b1b;">10</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link">
+                                                    Leon Maaskant
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/norway.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link">
+                                                    Leon Maaskant
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/norway.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link">
+                                                    L. Maaskant
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/norway.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">
+                                <div class="records-table-cell-team-free-agent-container">
+                                    <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-points">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--PODIUMS RECORDS TABLE START-->
+                <div class="records-title-container hide-main" id="title-2">
+                    <div class="records-title">F1 All Time Podiums</div>
+                </div>
+                <table class="records-table-box hide-main" id="records-2">
+                    <thead>
+                        <tr>
+                            <th class="records-table-box-header records-position">Pos.</th>
+                            <th class="records-table-box-header records-driver-team show">
+                                <span class="records-table-box-header records-driver-team-box">Driver/Team</span>
+                            </th>
+                            <th class="records-table-box-header records-driver hide">Driver</th>
+                            <th class="records-table-box-header records-team hide">Team</th>
+                            <th class="records-table-box-header records-stat-large hide2">Podiums</th>
+                            <th class="records-table-box-header records-stat-small show2">Pods.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--DRIVER #1 // THOMAS VINK-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #1e5bc6;">1</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">3</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                    Thomas Vink
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">3</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                    Thomas Vink
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">3</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                    T. Vink
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Red Bull</td>
+                            <td class="records-table-cell records-table-cell-points p1">22</td>
+                        </tr>
+
+                        <!--DRIVER #2 // DALLAN MCTEER-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #f58020;">2</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/driver-images/DallanMcTeer1.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">32</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                    Dallan McTeer
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/usa.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">32</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                    Dallan McTeer
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/usa.png.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">32</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                    D. McTeer
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/usa.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">McLaren</td>
+                            <td class="records-table-cell records-table-cell-points p2">21</td>
+                        </tr>
+
+                        <!--DRIVER #3 // OCTAVIAN URSU-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #4e7c9b;">3</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">8</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Octavian Ursu
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">8</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Octavian Ursu
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">8</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    O. Ursu
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">AlphaTauri</td>
+                            <td class="records-table-cell records-table-cell-points p3">20</td>
+                        </tr>
+
+                        <!--DRIVER #4 // ANTON CHEBOTAROV-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #f58020;">4</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">95</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                    Anton Chebotarov
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/ukraine.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">95</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                    Anton Chebotarov
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/ukraine.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">95</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                    A. Chebotarov
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/ukraine.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">McLaren</td>
+                            <td class="records-table-cell records-table-cell-points">13</td>
+                        </tr>
+
+                        <!--DRIVER #5 // EMIL LUNDELL-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #ed1c24;">5</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">36</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                    Emil Lundell
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/sweden.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">36</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                    Emil Lundell
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/sweden.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Ferrari</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">36</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                    E. Lundell
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/sweden.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Ferrari</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Ferrari</td>
+                            <td class="records-table-cell records-table-cell-points">12</td>
+                        </tr>
+
+                        <!--DRIVER #6 // GABRIEL RICO-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #4e7c9b;">6</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">88</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/gabriel-rico.html" title="View Driver Profile">
+                                                    Gabriel Rico
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">88</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/gabriel-rico.html" title="View Driver Profile">
+                                                    Gabriel Rico
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">88</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/gabriel-rico.html" title="View Driver Profile">
+                                                    G. Rico
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">AlphaTauri</td>
+                            <td class="records-table-cell records-table-cell-points">12</td>
+                        </tr>
+
+                        <!--DRIVER #7 // ADAM MODAN-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #b12039;">7</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">49</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                    Adam Modan
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">49</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                    Adam Modan
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Alfa Romeo</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">49</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                    A. Modan
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Alfa Romeo</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Alfa Romeo</td>
+                            <td class="records-table-cell records-table-cell-points">11</td>
+                        </tr>
+
+                        <!--DRIVER #8 // LUCA STEVENS-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #1e5bc6;">8</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">40</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-2/luca-stevens.html" title="View Driver Profile">
+                                                    Luca Stevens
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">40</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-2/luca-stevens.html" title="View Driver Profile">
+                                                    Luca Stevens
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">40</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-2/luca-stevens.html" title="View Driver Profile">
+                                                    L. Stevens
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Red Bull</td>
+                            <td class="records-table-cell records-table-cell-points">11</td>
+                        </tr>
+
+                        <!--DRIVER #9 // ROMEO GAGLIOTTI-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #37bedd;">9</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">19</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/romeo-gagliotti.html" title="View Driver Profile">
+                                                    Romeo Gagliotti
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">19</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/romeo-gagliotti.html" title="View Driver Profile">
+                                                    Romeo Gagliotti
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Williams</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">19</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/romeo-gagliotti.html" title="View Driver Profile">
+                                                    R. Gagliotti
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Williams</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Williams</td>
+                            <td class="records-table-cell records-table-cell-points">10</td>
+                        </tr>
+
+                        <!--DRIVER #10 // ANTONIO BRANCATI-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #c34b1b;">10</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Antonio Brancati
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/italy.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Antonio Brancati
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/italy.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    A. Brancati
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/italy.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">
+                                <div class="records-table-cell-team-free-agent-container">
+                                    <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-points">10</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--POLES RECORDS TABLE START-->
+                <div class="records-title-container hide-main" id="title-3">
+                    <div class="records-title">F1 All Time Pole Positions</div>
+                </div>
+                <table class="records-table-box hide-main" id="records-3">
+                    <thead>
+                        <tr>
+                            <th class="records-table-box-header records-position">Pos.</th>
+                            <th class="records-table-box-header records-driver-team show">
+                                <span class="records-table-box-header records-driver-team-box">Driver/Team</span>
+                            </th>
+                            <th class="records-table-box-header records-driver hide">Driver</th>
+                            <th class="records-table-box-header records-team hide">Team</th>
+                            <th class="records-table-box-header records-stat-small">Poles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--DRIVER #1 // OCTAVIAN URSU-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #4e7c9b;">1</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">8</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Octavian Ursu
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">8</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Octavian Ursu
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">8</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    O. Ursu
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">AlphaTauri</td>
+                            <td class="records-table-cell records-table-cell-points p1">13</td>
+                        </tr>
+
+                        <!--DRIVER #2 // DALLAN MCTEER-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #f58020;">2</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/driver-images/DallanMcTeer1.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">32</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                    Dallan McTeer
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/usa.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">32</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                    Dallan McTeer
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/usa.png.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">32</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                    D. McTeer
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/usa.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">McLaren</td>
+                            <td class="records-table-cell records-table-cell-points p2">11</td>
+                        </tr>
+
+                        <!--DRIVER #3 // EMIL LUNDELL-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #ed1c24;">3</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">36</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                    Emil Lundell
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/sweden.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">36</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                    Emil Lundell
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/sweden.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Ferrari</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">36</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                    E. Lundell
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/sweden.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Ferrari</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Ferrari</td>
+                            <td class="records-table-cell records-table-cell-points p3">7</td>
+                        </tr>
+
+                        <!--DRIVER #4 // THOMAS VINK-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #1e5bc6;">4</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">3</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                    Thomas Vink
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">3</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                    Thomas Vink
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">3</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                    T. Vink
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/netherlands.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Red Bull</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Red Bull</td>
+                            <td class="records-table-cell records-table-cell-points">6</td>
+                        </tr>
+
+                        <!--DRIVER #5 // ANTONIO BRANCATI-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #c34b1b;">5</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Antonio Brancati
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/italy.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    Antonio Brancati
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/italy.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link" href="../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                    A. Brancati
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/italy.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">
+                                <div class="records-table-cell-team-free-agent-container">
+                                    <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-points">5</td>
+                        </tr>
+
+                        <!--DRIVER #6 // ANTON CHEBOTAROV-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #f58020;">6</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">95</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                    Anton Chebotarov
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/ukraine.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">95</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                    Anton Chebotarov
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/ukraine.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">95</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                    A. Chebotarov
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/ukraine.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">McLaren</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">McLaren</td>
+                            <td class="records-table-cell records-table-cell-points">4</td>
+                        </tr>
+
+                        <!--DRIVER #7 // GABRIEL RICO-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #4e7c9b;">7</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">88</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/gabriel-rico.html" title="View Driver Profile">
+                                                    Gabriel Rico
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">88</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/gabriel-rico.html" title="View Driver Profile">
+                                                    Gabriel Rico
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">88</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/gabriel-rico.html" title="View Driver Profile">
+                                                    G. Rico
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/romania.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">AlphaTauri</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">AlphaTauri</td>
+                            <td class="records-table-cell records-table-cell-points">4</td>
+                        </tr>
+
+                        <!--DRIVER #8 // ADAM MODAN-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #b12039;">8</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">49</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                    Adam Modan
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">49</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                    Adam Modan
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Alfa Romeo</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">49</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                    A. Modan
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/england.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Alfa Romeo</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Alfa Romeo</td>
+                            <td class="records-table-cell records-table-cell-points">3</td>
+                        </tr>
+
+                        <!--DRIVER #9 // ONDŘEJ MACHÁČ-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #b12039;">9</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette2.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">73</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/ondrej-machac.html" title="View Driver Profile">
+                                                    Ondřej Macháč
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/czech.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">73</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/ondrej-machac.html" title="View Driver Profile">
+                                                    Ondřej Macháč
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/czech.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Alfa Romeo</span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">73</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <a class="records-driver-link" href="../drivers/tier-1/ondrej-machac.html" title="View Driver Profile">
+                                                    O. Macháč
+                                                </a>
+                                            </span>
+                                        <img src="../img/nations/czech.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">Alfa Romeo</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">Alfa Romeo</td>
+                            <td class="records-table-cell records-table-cell-points">3</td>
+                        </tr>
+
+                        <!--DRIVER #10 // Leon Maaskant-->
+                        <tr class="records-table-row">
+                            <td class="records-table-cell records-table-cell-position" style="border-left: 3px solid #c34b1b;">10</td>
+                            <td class="records-table-cell records-table-cell-driver">
+                                <div class="records-table-driver-details">
+                                    <div class="records-driver-image-container">
+                                        <div class="records-driver-image">
+                                            <picture class="records-picture">
+                                                <img src="../img/misc/silhouette.png">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="records-driver-name-container hide">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link">
+                                                    Leon Maaskant
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <img src="../img/nations/norway.png" class="records-table-flag">
+                                    </div>
+                                    <div class="records-driver-name-container show1">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link">
+                                                    Leon Maaskant
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/norway.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="records-driver-name-container show2">
+                                        <div class="records-driver-name">
+                                            <span class="records-table-cell records-table-cell-number">00</span>
+                                            <span class="records-table-cell records-table-cell-full-name">
+                                                <div class="records-driver-link">
+                                                    L. Maaskant
+                                                </div>
+                                            </span>
+                                        <img src="../img/nations/norway.png" class="records-table-flag">
+                                        </div>
+                                        <span class="records-table-cell-team">
+                                            <div class="records-table-cell-team-free-agent-container">
+                                                <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-team hide">
+                                <div class="records-table-cell-team-free-agent-container">
+                                    <img class="records-table-cell-team-free-agent" src="../img/logos/teams/free-agent.png">
+                                </div>
+                            </td>
+                            <td class="records-table-cell records-table-cell-points">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--FASTEST LAPS RECORDS TABLE START-->
+    <div class="container-main">
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 All Time Fastest Laps</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--POINTS RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 All Time Points</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--RACES RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 All Time Races</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--DRIVERS CHAMPIONSHIPS RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 Tier 2 Drivers' Championships</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--CONSTRUCTORS CHAMPIONSHIPS RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 Tier 2 Constructors' Championships</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-socials">
+            <div class="socials-icons">
+                <a href="https://discord.gg/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/discord.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/virtualformulaseries.official/" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/instagram.png">
+                    </div>
+                </a>
+                <a href="https://www.twitter.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/twitter.png">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/youtube.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>VIRTUAL FORMULA SERIES 2023, ALL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+</html>

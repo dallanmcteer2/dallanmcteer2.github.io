@@ -1,0 +1,739 @@
+.main-content {
+    display: block;
+}
+.driver-container-wrapper {
+    margin: 75px 0 0 0;
+    position: relative;
+    background-color: #18191A;
+    height: 45rem;
+}
+.driver-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    overflow: hidden;
+    height: 45rem;
+    width: 100%;
+}
+.driver-background, .driver-background-team-color {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #c34b1b;
+    overflow: hidden;
+}
+.driver-background {
+    min-height: 14.2rem;
+    background-color: #000;
+}
+.driver-background-team-color {
+    left: 0;
+    top: 0;
+    opacity: .32;
+}
+.driver-background-team-logo {
+    position: absolute;
+    opacity: .24;
+    height: 70%;
+    width: auto;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.driver-background-team-gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.driver-background-team-gradient::before {
+    background: radial-gradient(transparent,#18191A 225%);
+}
+.driver-background-team-gradient::after { 
+    background: radial-gradient(transparent, #000 225%);
+}
+.driver-background-team-gradient::after, .driver-background-team-gradient::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 500;
+}
+.driver-name-first {
+    font-size: 7rem;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+}
+.driver-name-last {
+    font-size: 8rem;
+    display: flex;
+    justify-content: flex-end;
+    line-height: .7;
+    font-weight: 600;
+}
+.driver-name-full {
+    font-size: 1.9rem;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+.driver-number {
+    font-size: 7rem;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0;
+    right: 4rem;
+    line-height: 1.8;
+    font-weight: 500;
+}
+.driver-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-right: 4rem;
+    position: absolute;
+    flex-flow: column;
+}
+.driver-details-box, .driver-details-box-esports {
+    display: flex;
+    flex-flow: row;
+    gap: 0.8rem;
+    justify-content: right;
+    margin-top: 2rem;
+    max-width: 40%;
+    margin-left: auto;
+}
+.driver-details-box-esports {
+    margin-top: 1rem;
+}
+.driver-details-nationality, .driver-details-team, .driver-esports-team-link {
+    font-size: 1.6rem;
+    color: #fff;
+    opacity: .8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.driver-details-team::before {
+    content: "";
+    display: block;
+    width: 0.05rem;
+    height: 100%;
+    background-color: #fff;
+    opacity: .8;
+}
+.driver-details-flag-box {
+    height: 1.8rem;
+    width: 2.7rem;
+    border-radius: 0.4rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+.driver-details-flag {
+    border-radius: 0.4rem;
+    height: 100%;
+}
+.driver-details-team {
+    gap: 0.8rem;
+}
+.driver-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.driver-image-container-silhouette, .driver-image-container {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+}
+.driver-extra-details-title {
+    position: absolute;
+    width: 18rem;
+    z-index: 500;
+    padding-bottom: 1rem;
+    top: 5rem;
+    line-height: 1.35;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: #18191A;
+    border-radius: 10px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.driver-extra-details-box {
+    position: relative;
+    width: 30rem;
+    height: 14rem;
+    z-index: 500;
+    margin: 0 0 9rem 0;
+    background-color: #18191A;
+    border-radius: 10px;
+}
+.driver-extra-details-box-reserve {
+    margin: 0 0 16rem 0;
+}
+.driver-extra-details-stats-box, .driver-stats-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+}
+.driver-extra-details-stats1, .driver-extra-details-stats2, .driver-details-stats1, .driver-details-stats2, .driver-details-stats3 {
+    padding: 0rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color: #fff;
+}
+.driver-extra-details-stats1, .driver-details-stats1 {
+    border-right: solid 1px #5A5A5A;
+    border-bottom: solid 1px #5A5A5A;
+    padding-bottom: .5rem;
+}
+.driver-extra-details-stats2, .driver-details-stats2 {
+    border-right: solid 1px #5A5A5A;
+    padding-top: .5rem;
+}
+.driver-details-stats1 {
+    padding: 0 .5rem .5rem .25rem;
+}
+.driver-details-stats3 {
+    border-right: solid 1px #5A5A5A;
+    border-bottom: solid 1px #5A5A5A;
+    padding: .5rem;
+}
+.season-stats-title, .driver-stats-title {
+    font-size: .7rem;
+}
+.season-stats-stat-value, .driver-stats-stat-value {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.edge {
+    border-right: none;
+}
+.current-teammate-box {
+    position: relative;
+    width: 30rem;
+    height: 7rem;
+    z-index: 500;
+    background-color: #18191A;
+    bottom: 0;
+    border-radius: 10px;
+    display: flex;
+    padding: 1rem;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+.teammate-details-wrapper {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+.current-teammate-box:hover {
+    color: #c34b1b;
+}
+.teammate-image-container {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    min-width: 5rem;
+    min-height: 5rem;
+    overflow: hidden;
+    background-color: #343536;
+    border-radius: 5px;
+}
+.teammate-image {
+    height: 100%;
+    width: 100%;
+}
+.teammate-info {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.teammate-details-info {
+    display: flex;
+    flex-flow: column;
+    padding: 0 0 0 1rem;
+}
+.teammate-misc-details {
+    display: flex;
+    flex-flow: row;
+    gap: 0.8rem;
+    font-size: .9rem;
+    color: #7E7E7E;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+.teammate-main-details {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.teammate-number {
+    position: relative;
+}
+.teammate-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.teammate-nation {
+    position: relative;
+    width: 1.6rem;
+    height: auto;
+    border-radius: .3rem;
+    margin: .2rem .5rem 0 0;
+}
+.teammate-arrow {
+    display: flex;
+    position: absolute;
+    right: 0;
+    align-items: center;
+}
+.driver-details-team-logo-container {
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.driver-details-team-logo {
+    width: 100%;
+    height: 100%;
+}
+.driver-extra-details {
+    margin: 0 0 0 3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.driver-stats-menu-container {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #c34b1b;
+}
+.red-bull {
+    background: #000 linear-gradient(90deg, #000 20%, #3671C6 350%);
+}
+.mercedes {
+    background: #000 linear-gradient(90deg, #000 20%, #6CD3BF 350%);
+}
+.ferrari {
+    background: #000 linear-gradient(90deg, #000 20%, #F91536 350%);
+}
+.mclaren {
+    background: #000 linear-gradient(90deg, #000 20%, #F58020 350%);
+}
+.aston-martin {
+    background: #000 linear-gradient(90deg, #000 20%, #358C75 350%);
+}
+.alpine {
+    background: #000 linear-gradient(90deg, #000 20%, #2293D1 350%);
+}
+.williams {
+    background: #000 linear-gradient(90deg, #000 20%, #37BEDD 350%);
+}
+.alphatauri {
+    background: #000 linear-gradient(90deg, #000 20%, #5E8FAA 350%);
+}
+.alfa-romeo {
+    background: #000 linear-gradient(90deg, #000 20%, #C92D4B 350%);
+}
+.haas {
+    background: #000 linear-gradient(90deg, #000 20%, #B6BABD 350%);
+}
+.no-team {
+    background: #000 linear-gradient(90deg, #000 20%, #C34B1B 350%);
+}
+.stats-menu {
+    background-color: transparent;
+    border: solid 3px #5A5A5A;
+    border-radius: 30px;
+    color: #fff;
+    margin: 0 0 0 2rem;
+    padding: .5rem 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.active {
+    background-color: #5A5A5A;
+    border-color: #c34b1b;
+    transition: .15s ease-in-out;
+}
+.hide-main {
+    display: none!important;
+}
+.driver-info-container {
+    width: 100%;
+    padding: 0 18.75vw;
+    position: relative;
+}
+.driver-bio-container, .driver-stats-container {
+    width: 100%;
+}
+.driver-bio-table {
+    font-size: 1.4rem;
+    background-color: #18191A;
+    border: solid 1px #c34b1b;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    position: relative;
+    width: 100%;
+}
+.driver-title-dash {
+    height: 4rem;
+    margin: 0 1rem 0 .5rem;
+}
+.driver-bio-table-title {
+    padding: 1rem 0;
+    font-size: 2.75rem;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    line-height: 1.4;
+}
+.info-title {
+    text-align: left;
+    padding: .3rem 0;
+}
+.info-value {
+    text-align: right;
+}
+.driver-stats-grid {
+    background-color: #18191A;
+    border: solid 1px #c34b1b;
+    border-radius: 10px;
+    position: relative;
+}
+.driver-stats {
+    width: 100%;
+    height: 100%;
+}
+.driver-full-stats-box {
+    margin-bottom: 40px;
+}
+.esports-value {
+    color: #c34b1b;
+    font-weight: 500;
+    text-decoration: 1px underline #18191A;
+    transition: .2s ease-in-out;
+}
+.esports-value:hover {
+    text-decoration-color: #c34b1b;
+}
+.vfs-dash-profile {
+    height: 2.5rem;
+    margin: 0 .5rem 0 0;
+}
+.vfs-dash {
+    height: 100%;
+}
+@media (max-width: 83em) {
+    .driver-info-container {
+        padding: 0 1.375rem;
+    }
+}
+@media (max-width: 62.49em) {
+    .hide {
+        display: none;
+    }
+    .driver-background-team-gradient::after {
+        background: linear-gradient(180deg, transparent, transparent, #18191A 80%);
+    }
+    .driver-background, .driver-background-team-color {
+        border-bottom: none;
+    }
+    .driver-background-team-logo {
+        height: 50%;
+        bottom: 7rem;
+    }
+    .driver-container-wrapper {
+        height: auto;
+    }
+    .driver-container {
+        height: 30rem;
+        position: relative;
+    }
+    .driver-image-container-silhouette {
+        height: 60%;
+        bottom: 5rem;
+    }
+    .driver-image-container {
+        height: 80%;
+        bottom: 4rem;
+    }
+    .driver-info {
+        align-items: center;
+        padding: 1.375rem 1.375rem 0 1.375rem;
+        position: relative;
+        z-index: 501;
+        height: auto;
+    }
+    .driver-details-box {
+        flex-flow: column;
+        justify-content: center;
+        margin: 0;
+        max-width: none;
+        padding: 0 1.375rem 1rem 1.375rem;
+    }
+    .driver-details-team::before {
+        content: none;
+        width: 0;
+        height: 0;
+    }
+    .driver-details-nationality, .driver-details-team, .driver-esports-team-link {
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .driver-details-flag-box {
+        height: 1.2rem;
+        width: 1.8rem;
+    }
+    .driver-extra-details {
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        border-bottom: solid 1px #c34b1b;
+        margin: -9.5rem 0 0 0;
+    }
+    .driver-extra-details-wrapper {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+    .driver-extra-details-title {
+        text-align: left;
+        justify-content: stretch;
+        margin: 1rem .5rem;
+        padding-bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        position: relative;
+        top: 0;
+    }
+    .driver-extra-details-box {
+        width: 100%;
+        height: 12rem;
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0 1rem 0;
+        padding: 0;
+        position: relative;
+        background-color: #343536;
+    }
+    .driver-extra-details-box-reserve {
+        margin: 1rem 0 0 0;
+    }
+    .driver-number {
+        font-size: 1.5rem;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        right: auto;
+    }
+    .current-season-wrapper {
+        background-color: #18191A;
+        position: relative;
+        height: auto;
+        padding: 0 1.375rem 1.375rem 1.375rem;
+    }
+    .no-padding {
+        padding: 0;
+        border-top: solid 1px #c34b1b;
+    }
+    /*.red-bull {
+        padding: 0;
+        border-top: solid 1px #3671C6;
+    }
+    .mercedes {
+        padding: 0;
+        border-top: solid 1px #6CD3BF;
+    }
+    .ferrari {
+        padding: 0;
+        border-top: solid 1px #F91536;
+    }
+    .mclaren {
+        padding: 0;
+        border-top: solid 1px #F58020;
+    }
+    .aston-martin {
+        padding: 0;
+        border-top: solid 1px #358C75;
+    }
+    .alpine {
+        padding: 0;
+        border-top: solid 1px #2293D1;
+    }
+    .williams {
+        padding: 0;
+        border-top: solid 1px #37BEDD;
+    }
+    .alphatauri {
+        padding: 0;
+        border-top: solid 1px #5E8FAA;
+    }
+    .alfa-romeo {
+        padding: 0;
+        border-top: solid 1px #C92D4B;
+    }
+    .haas {
+        padding: 0;
+        border-top: solid 1px #B6BABD;
+    }*/
+    .season-stats-title, .driver-stats-title {
+        font-size: .6rem;
+    }
+    .season-stats-stat-value, .driver-stats-stat-value {
+        font-size: 2.75rem;
+    }
+    .current-teammate-box {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        position: relative;
+        background-color: #343536;
+        width: 100%;
+        height: 6rem;
+    }
+    .teammate-image-container {
+        min-width: 4rem;
+        min-height: 4rem;
+        width: 4rem;
+        height: 4rem;
+        background-color: #5A5A5A;
+    }
+    .teammate-name {
+        font-size: 1rem;
+    }
+    .teammate-misc-details {
+        font-size: .8rem;
+    }
+    .teammate-nation {
+        width: 1.3rem;
+    }
+    .driver-stats-menu-container {
+        height: 4rem;
+    }
+    .driver-title-dash {
+        height: 3rem;
+        margin: 0 .75rem 0 .5rem;
+    }
+    .driver-bio-table-title {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .stats-menu {
+        border-radius: 10px;
+        margin: 0 0 0 1rem;
+        padding: .5rem;
+        font-size: .8rem;
+    }
+    .stats-menu:first-of-type {
+        margin: 0;
+    }
+    .info-title, .info-value {
+        font-size: .9rem;
+    }
+    .driver-bio-table {
+        padding: .25rem .5rem;
+    }
+}
+@media (min-width: 62.49em) {
+    .show {
+        display: none!important;
+    }
+}
+@media (max-width: 22.5em) {
+    .current-teammate-box {
+        height: 4rem;
+        padding: .5rem;
+    }
+    .teammate-image-container {
+        height: 3rem;
+        width: 3rem;
+        min-height: 3rem;
+        min-width: 3rem;
+    }
+    .teammate-misc-details {
+        font-size: .6rem;
+    }
+    .teammate-name {
+        font-size: .8rem;
+    }
+    .teammate-nation {
+        display: none;
+    }
+    .driver-extra-details-title {
+        font-size: 1.3rem;
+    }
+    .season-stats-title, .driver-stats-title {
+        font-size: .5rem;
+    }
+    .season-stats-stat-value {
+        font-size: 2rem;
+    }
+    .driver-stats-stat-value {
+        font-size: 1.8rem;
+    }
+    .driver-extra-details-box {
+        height: 9rem;
+    }
+    .driver-container-extend {
+        height: 49.9rem;
+    }
+    .driver-stats-menu-container {
+        height: 3rem;
+        justify-content: center;
+    }
+    .stats-menu {
+        border-radius: 7px;
+        border-width: 2px;
+        margin: 0 0 0 .25rem;
+        padding: .25rem;
+        font-size: .7rem;
+    }
+    .teammate-arrow {
+        justify-content: flex-end;
+    }
+    .right-arrow {
+        height: 70%;
+        width: 70%;
+    }
+    .driver-title-dash {
+        height: 2.3rem;
+        margin: 0 .4rem 0 .4rem;
+    }
+    .driver-bio-table-title {
+        font-size: 1.5rem;
+    }
+    .driver-container-wrapper {
+        margin-top: 60px;
+    }
+    .vfs-dash-profile {
+        height: 1.8rem;
+        margin: 0 .5rem 0 0;
+    }
+}

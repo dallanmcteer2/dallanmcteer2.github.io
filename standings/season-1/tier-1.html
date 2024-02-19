@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="../../../img/misc/favicon.png">
+    <link rel="stylesheet" href="../../../CSS/Main CSS/stylesindex.css">
+    <link rel="stylesheet" href="../../../CSS/Main CSS/header.css">
+    <link rel="stylesheet" href="../../../CSS/Main CSS/footer.css">
+    <link rel="stylesheet" href="../../../CSS/Main CSS/sidebar.css">
+    <link rel="stylesheet" href="../../../CSS/Page Specific/standings.css">
+    <link rel="stylesheet" href="../../../CSS/Page Specific/standings-teams.css">
+    <script defer="defer" src="../../../JS/standings.js"></script>
+    <title>VFS | Tier 1 Standings</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <div id="mainHeader">
+            <header class="header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="../../../img/misc/VFSLogoWhite.png" alt="VFS Logo">
+                    </a>
+                </div>
+            </header>
+        </div>
+    </nav>
+    <div class="navigation">
+        <label class="sidebar-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <a class="sidebar-links" href="../../../all-news.html">
+                    <h5 class="sidebar-links-text">Articles</h5>
+                </a>
+                <a class="sidebar-links" href="../../../calendar.html">
+                    <h5 class="sidebar-links-text">Calendar</h5>
+                </a>
+                <a class="sidebar-links" href="../../../standings/season-1/tier-1.html">
+                    <h5 class="sidebar-links-text">Standings</h5>
+                </a>
+                <a class="sidebar-links" href="../../../drivers/tier-1.html">
+                    <h5 class="sidebar-links-text">Drivers</h5>
+                </a>
+                <a class="sidebar-links" href="../../../records/all-time.html">
+                    <h5 class="sidebar-links-text">Records</h5>
+                </a>
+                <!--<a class="sidebar-links" href="../../../archives.html">
+                    <h5 class="sidebar-links-text">Archives</h5>
+                </a>
+                <a class="sidebar-links" href="../../../about-us.html">
+                    <h5 class="sidebar-links-text">About Us</h5>
+                </a>-->
+                <a class="sidebar-links" href="../../../contact-us.html">
+                    <h5 class="sidebar-links-text">Contact Us</h5>
+                </a>
+                <a class="sidebar-links" href="../../../register.html">
+                    <h5 class="sidebar-links-text">Register</h5>
+                </a>
+            </nav>
+        </aside>
+    </div>
+    <div class="page-title">
+        <div>
+            <h1>VFS Standings</h1>
+        </div>
+    </div>
+    <div class="standings-championship-bar-container">
+        <button class="championship-menu active" id="btn-1" title="Drivers' Standings">Drivers' Standings</button>
+        <button class="championship-menu" id="btn-2" title="Constructors' Standings">
+            <div class="hide2">Constructors' Standings</div>
+            <div class="show2">Teams' Standings</div>
+        </button>
+    </div>
+    <div class="selection-table">
+        <div class="selection-container-standings"> 
+            <div class="selections">
+                <div class="select-box-standings">Category</div>
+                <select id="links" size="1" onchange="window.location.href=this.value" class="select-container">
+                    <option value="tier-1.html">F1 Tier 1</option>
+                    <option value="tier-2.html">F1 Tier 2</option>
+                    <!--<option value="tier-3.html">F1 Tier 3</option>
+                    <option value="tier-4.html">F1 Tier 4</option>
+                    <option value="tier-5.html">F1 Tier 5</option>-->
+                </select>
+                <script>
+                    function reset_options() {
+                        document.getElementById('links').options.length = 0;
+                        return true;
+                    }
+                </script>
+                <body onbeforeunload="reset_options()"></body>
+            </div>
+        </div>
+    </div>
+    <div class="standings-table">
+        <div>
+            <div>
+                <table class="standings-table-box">
+                <thead>
+                    <tr>
+                        <th class="standings-table-box-header position">Pos.</th>
+                        <th class="standings-table-box-header driver-team show">
+                            <span class="standings-table-box-header driver-team-box">Driver/Team</span>
+                        </th>
+                        <th class="standings-table-box-header driver hide">Driver</th>
+                        <th class="standings-table-box-header team hide">Team</th>
+                        <th class="standings-table-box-header points">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Standings Box Driver Start-->
+
+                    <!--Alfa Romeo #1 // ADAM MODAN-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #b12039;">1</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">49</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                Adam Modan
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/england.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">49</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                Adam Modan
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/england.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Alfa Romeo</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">49</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/adam-modan.html" title="View Driver Profile">
+                                                A. Modan
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/england.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Alfa Romeo</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Alfa Romeo</td>
+                        <td class="standings-table-cell standings-table-cell-points p1">213</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Ferrari #1 // EMIL LUNDELL-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #ed1c24;">2</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">36</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                Emil Lundell
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/sweden.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">36</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                Emil Lundell
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/sweden.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Ferrari</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">36</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/emil-lundell.html" title="View Driver Profile">
+                                                E. Lundell
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/sweden.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Ferrari</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Ferrari</td>
+                        <td class="standings-table-cell standings-table-cell-points p2">187</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--AlphaTauri #1 // OCTAVIAN URSU-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #4e7c9b;">3</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">8</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                Octavian Ursu
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/romania.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">8</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                Octavian Ursu
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/romania.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">AlphaTauri</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">8</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/octavian-ursu.html" title="View Driver Profile">
+                                                O. Ursu
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/romania.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">AlphaTauri</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">AlphaTauri</td>
+                        <td class="standings-table-cell standings-table-cell-points p3">120</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Alfa Romeo #2 // ONDŘEJ MACHÁČ-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #b12039;">4</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">73</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/ondrej-machac.html" title="View Driver Profile">
+                                                Ondřej Macháč
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/czech.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">73</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/ondrej-machac.html" title="View Driver Profile">
+                                                Ondřej Macháč
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/czech.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Alfa Romeo</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">73</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/ondrej-machac.html" title="View Driver Profile">
+                                                O. Macháč
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/czech.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Alfa Romeo</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Alfa Romeo</td>
+                        <td class="standings-table-cell standings-table-cell-points">119</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Red Bull #1 THOMAS VINK-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #1e5bc6;">5</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">3</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                Thomas Vink
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/netherlands.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">3</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                Thomas Vink
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/netherlands.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Red Bull</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">3</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/thomas-vink.html" title="View Driver Profile">
+                                                T. Vink
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/netherlands.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Red Bull</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Red Bull</td>
+                        <td class="standings-table-cell standings-table-cell-points">112</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--McLaren #1 // ANTON CHEBOTAROV-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #f58020;">6</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">95</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                Anton Chebotarov
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/ukraine.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">95</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                Anton Chebotarov
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/ukraine.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">McLaren</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">95</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/anton-chebotarov.html" title="View Driver Profile">
+                                                A. Chebotarov
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/ukraine.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">McLaren</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">McLaren</td>
+                        <td class="standings-table-cell standings-table-cell-points">101</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Mercedes #1 // LUKÁŠ HENDRYCH-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #6cd3bf;">7</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">19</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/lukas-hendrych.html" title="View Driver Profile">
+                                                Lukáš Hendrych
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/czech.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">19</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/lukas-hendrych.html" title="View Driver Profile">
+                                                Lukáš Hendrych
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/czech.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Mercedes</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">19</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/lukas-hendrych.html" title="View Driver Profile">
+                                                L. Hendrych
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/czech.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Mercedes</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Mercedes</td>
+                        <td class="standings-table-cell standings-table-cell-points">86</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Mercedes #2 // TIM VERHOEVEN-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #6cd3bf;">8</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">43</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/tim-verhoeven.html" title="View Driver Profile">
+                                                Tim Verhoeven
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/sweden.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">43</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/tim-verhoeven.html" title="View Driver Profile">
+                                                Tim Verhoeven
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/sweden.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Mercedes</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">43</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/tim-verhoeven.html" title="View Driver Profile">
+                                                T. Verhoeven
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/sweden.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Mercedes</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Mercedes</td>
+                        <td class="standings-table-cell standings-table-cell-points">78</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--McLaren #2 // DALLAN MCTEER-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #f58020;">9</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/driver-images/DallanMcTeer1.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">32</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                Dallan McTeer
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/usa.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">32</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                Dallan McTeer
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/usa.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">McLaren</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">32</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/dallan-mcteer.html" title="View Driver Profile">
+                                                D. McTeer
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/usa.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">McLaren</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">McLaren</td>
+                        <td class="standings-table-cell standings-table-cell-points">59</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--AlphaTauri #2 // GABRIEL RICO-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #4e7c9b;">10</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">88</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/gabriel-rico.html" title="View Driver Profile">
+                                                Gabriel Rico
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/spain.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">88</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/gabriel-rico.html" title="View Driver Profile">
+                                                Gabriel Rico
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/spain.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">AlphaTauri</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">88</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/gabriel-rico.html" title="View Driver Profile">
+                                                G. Rico
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/spain.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">AlphaTauri</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">AlphaTauri</td>
+                        <td class="standings-table-cell standings-table-cell-points">56</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Haas #1 // MISKA HEIKKILÄ-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #b6babd;">11</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">26</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/miska-heikkila.html" title="View Driver Profile">
+                                                Miska Heikkilä
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/finland.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">26</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/miska-heikkila.html" title="View Driver Profile">
+                                                Miska Heikkilä
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/finland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Haas</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">26</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/miska-heikkila.html" title="View Driver Profile">
+                                                M. Heikkilä
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/finland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Haas</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Haas</td>
+                        <td class="standings-table-cell standings-table-cell-points">49</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Williams #1 // ALEKSI KOVERO-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #37bedd;">12</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">7</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/aleksi-kovero.html" title="View Driver Profile">
+                                                Aleksi Kovero
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/finland.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">7</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/aleksi-kovero.html" title="View Driver Profile">
+                                                Aleksi Kovero
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/finland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Williams</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">7</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/aleksi-kovero.html" title="View Driver Profile">
+                                                A. Kovero
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/finland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Williams</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Williams</td>
+                        <td class="standings-table-cell standings-table-cell-points">45</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+                    
+                    <!--Haas #2 // JACK GROSSART-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #b6babd;">13</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">88</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/jack-grossart.html" title="View Driver Profile">
+                                                Jack Grossart
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/scotland.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">88</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/jack-grossart.html" title="View Driver Profile">
+                                                Jack Grossart
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/scotland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Haas</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">88</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/jack-grossart.html" title="View Driver Profile">
+                                                J. Grossart
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/scotland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Haas</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Haas</td>
+                        <td class="standings-table-cell standings-table-cell-points">41</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Red Bull #2 KACPER GRABIEC-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #1e5bc6;">14</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">7</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/kacper-grabiec.html" title="View Driver Profile">
+                                                Kacper Grabiec
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/poland.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">7</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/kacper-grabiec.html" title="View Driver Profile">
+                                                Kacper Grabiec
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/poland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Red Bull</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">7</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/kacper-grabiec.html" title="View Driver Profile">
+                                                K. Grabiec
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/poland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Red Bull</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Red Bull</td>
+                        <td class="standings-table-cell standings-table-cell-points">34</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Williams #2 // ROMEO GAGLIOTTI-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #37bedd;">16</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">19</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/romeo-gagliotti.html" title="View Driver Profile">
+                                                Romeo Gagliotti
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/netherlands.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">19</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/romeo-gagliotti.html" title="View Driver Profile">
+                                                Romeo Gagliotti
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/netherlands.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Williams</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">19</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/romeo-gagliotti.html" title="View Driver Profile">
+                                                R. Gagliotti
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/netherlands.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Williams</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Williams</td>
+                        <td class="standings-table-cell standings-table-cell-points">23</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+                    
+                    <!--Ferrari #2 // MICHAEL BUBLA-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #ed1c24;">15</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">13</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/michael-bubla.html" title="View Driver Profile">
+                                                Michael Bubla
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/czech.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">13</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/michael-bubla.html" title="View Driver Profile">
+                                                Michael Bubla
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/czech.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Ferrari</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">13</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/michael-bubla.html" title="View Driver Profile">
+                                                M. Bubla
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/czech.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Ferrari</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Ferrari</td>
+                        <td class="standings-table-cell standings-table-cell-points relegation">22</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Alpine #2 // JUSTIN JANSON-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #2293d1;">17</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">92</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/justin-janson.html" title="View Driver Profile">
+                                                Justin Janson
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/netherlands.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">92</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/justin-janson.html" title="View Driver Profile">
+                                                Justin Janson
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/netherlands.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Alpine</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">92</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/justin-janson.html" title="View Driver Profile">
+                                                J. Janson
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/netherlands.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Alpine</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Alpine</td>
+                        <td class="standings-table-cell standings-table-cell-points relegation">21</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Alpine #1 // DANIEL BODNÁR-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #2293d1;">18</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">80</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/daniel-bodnar.html" title="View Driver Profile">
+                                                Daniel Bodnár
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/slovakia.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">80</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/daniel-bodnar.html" title="View Driver Profile">
+                                                Daniel Bodnár
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/slovakia.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Alpine</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">80</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/daniel-bodnar.html" title="View Driver Profile">
+                                                D. Bodnár
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/slovakia.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Alpine</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Alpine</td>
+                        <td class="standings-table-cell standings-table-cell-points relegation">13</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Aston Martin #1 // NEDIM LEMEZAN-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #2d826d;">19</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">5</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/nedim-lemezan.html" title="View Driver Profile">
+                                                Nedim Lemezan
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/bosnia.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">5</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/nedim-lemezan.html" title="View Driver Profile">
+                                                Nedim Lemezan
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/bosnia.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Aston Martin</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">5</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/nedim-lemezan.html" title="View Driver Profile">
+                                                N. Lemezan
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/bosnia.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Aston Martin</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Aston Martin</td>
+                        <td class="standings-table-cell standings-table-cell-points relegation">12</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Aston Martin #2 // TONY HIETALA-->
+                    <tr class="standings-table-row">
+                        <td class="standings-table-cell standings-table-cell-position" style="border-left: 3px solid #2d826d;">20</td>
+                        <td class="standings-table-cell standings-table-cell-driver">
+                            <div class="standings-table-driver-details">
+                                <div class="standings-driver-image-container">
+                                    <div class="standings-driver-image">
+                                        <picture class="standings-picture">
+                                            <img src="../../../img/misc/silhouette.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="standings-driver-name-container hide">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">90</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/tony-hietala.html" title="View Driver Profile">
+                                                Tony Hietala
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <img src="../../../img/nations/finland.png" class="standings-table-flag">
+                                </div>
+                                <div class="standings-driver-name-container show1">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">90</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/tony-hietala.html" title="View Driver Profile">
+                                                Tony Hietala
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/finland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Aston Martin</span>
+                                </div>
+                                <div class="standings-driver-name-container show2">
+                                    <div class="standings-driver-name">
+                                        <span class="standings-table-cell standings-table-cell-number">90</span>
+                                        <span class="standings-table-cell standings-table-cell-full-name">
+                                            <a class="standings-driver-link" href="../../../drivers/tier-1/tony-hietala.html" title="View Driver Profile">
+                                                T. Hietala
+                                            </a>
+                                        </span>
+                                    <img src="../../../img/nations/finland.png" class="standings-table-flag">
+                                    </div>
+                                    <span class="standings-table-cell-team">Aston Martin</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell standings-table-cell-team hide">Aston Martin</td>
+                        <td class="standings-table-cell standings-table-cell-points relegation">0</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+                </tbody>
+                </table>
+
+                    <!--Standings Box Constructors Start-->
+
+                <table class="standings-table-box hide-main">
+                <thead>
+                    <tr>
+                        <th class="team-standings-table-box-header team-position">Pos.</th>
+                        <th class="team-standings-table-box-header team-alt team-change-show">
+                            <span class="team-standings-table-box-header team-alt-box">Team</span>
+                        </th>
+                        <th class="team-standings-table-box-header team-team team-change-hide">Team</th>
+                        <th class="team-standings-table-box-header team-points">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Standings Box Driver Start-->
+                    <!--Alfa Romeo-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #C92D4B;">1</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/Alfa Romeo.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">Alfa Romeo F1 Team Stake</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">Alfa Romeo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="team-standings-table-cell team-standings-table-cell-points team-p1">352</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+                    <!--Ferrari-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #F91536;">2</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/Ferrari.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">Scuderia Ferrari</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">Ferrari</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="team-standings-table-cell team-standings-table-cell-points team-p2">197</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--AlphaTauri-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #5E8FAA;">3</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/AlphaTauri.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">Scuderia AlphaTauri</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">AlphaTauri</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="team-standings-table-cell standings-table-cell-points team-p3">194</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Mercedes-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #6CD3BF;">4</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/Mercedes.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">Mercedes-AMG Petronas F1 Team</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">Mercedes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="standings-table-cell team-standings-table-cell-points">176</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--McLaren-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #F58020;">5</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/McLaren.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">McLaren Formula 1 Team</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">McLaren</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="team-standings-table-cell team-standings-table-cell-points">162</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+
+                    <!--Red Bull-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #1e5bc6;">6</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/Red Bull.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">Oracle Red Bull Racing</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">Red Bull</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="team-standings-table-cell team-standings-table-cell-points">146</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Haas-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #B6BABD;">7</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/Haas.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">MoneyGram Haas F1 Team</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">Haas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="team-standings-table-cell team-standings-table-cell-points">90</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Williams-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #37BEDD;">8</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/Williams.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">Williams Racing</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">Williams</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="team-standings-table-cell team-standings-table-cell-points">58</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Alpine-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #2293D1;">9</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/Alpine.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">BWT Alpine F1 Team</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">Alpine</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="team-standings-table-cell team-standings-table-cell-points">35</td>
+                    </tr>
+                    <!--Standings Box Driver End-->
+
+
+                    <!--Aston Martin-->
+                    <tr class="team-standings-table-row">
+                        <td class="team-standings-table-cell team-standings-table-cell-position" style="border-left: 2px solid #358C75;">10</td>
+                        <td class="team-standings-table-cell team-standings-table-cell-team">
+                            <div class="team-standings-table-team-details">
+                                <div class="team-standings-team-name-container">
+                                    <div class="team-standings-team-name">
+                                        <img src="../../../img/logos/teams/Astson Martin.png" class="team-standings-table-logo">
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-hide">Aston Martin Aramco Cognizant F1 Team</span>
+                                        <span class="team-standings-table-cell team-standings-table-cell-full-name team-change-show">Aston Martin</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="team-standings-table-cell team-standings-table-cell-points">12</td>
+                    </tr>
+                    <!--Standings Box Team End-->
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-socials">
+            <div class="socials-icons">
+                <a href="https://discord.gg/FwJ5JuAHNx" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../../../img/logos/socials/discord.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/virtualformulaseries.official/" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../../../img/logos/socials/instagram.png">
+                    </div>
+                </a>
+                <a href="https://www.twitter.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../../../img/logos/socials/twitter.png">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../../../img/logos/socials/youtube.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>VIRTUAL FORMULA SERIES 2023, ALL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+</html>

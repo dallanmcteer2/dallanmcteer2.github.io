@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.article-border-no-bottom {
+    margin-top: 40px;
+    border-top: solid 10px #c34b1b;
+    border-right: solid 10px #c34b1b;
+    border-left: solid 10px #c34b1b;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+fieldset {
+    border: 0;
+    padding: 0;
+}
+.no-margin {
+    margin: 0;
+}

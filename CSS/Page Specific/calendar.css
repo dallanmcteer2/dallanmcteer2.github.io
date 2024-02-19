@@ -1,0 +1,238 @@
+.main-content {
+    padding: 0 18.75vw;
+}
+.event-container {
+    display: flex;
+    flex-flow: column;
+}
+.event {
+    height: 12.5rem;
+    width: 100%;
+    border: solid 2px #5A5A5A;
+    border-radius: .5rem;
+    background-color: #18191A;
+    transition: .2s ease-in-out;
+    margin-bottom: 2rem;
+    display: flex;
+    overflow: hidden;
+}
+.event:hover .event-number-container, .event:hover .round-status-container, .event:hover {
+    border-color: #c34b1b;
+}
+.event-number-container {
+    width: 7.5rem;
+    height: 100%;
+    border-right: solid 2px #5A5A5A;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    transition: .2s ease-in-out;
+    justify-content: center;
+}
+.round-status-container {
+    height: 2.5rem;
+    width: 8rem;
+    border-bottom: solid 2px #5A5A5A;
+    border-right: solid 2px #5A5A5A;
+    border-bottom-right-radius: .5rem;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-in-out;
+}
+.event-title, .event-number {
+    margin: 0 auto;
+}
+.event-title {
+    font-size: 1rem;
+}
+.event-number {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: .9;
+}
+.event-date {
+    font-size: 1rem;
+}
+.event-name {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.main-container {
+    position: relative;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.round-status {
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 1.1;
+}
+.circuit-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin: 0 0 0 1rem;
+}
+.circuit-flag-container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 0 auto;
+}
+.circuit-flag-container::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    background: linear-gradient(90deg, #18191A 5%, transparent 70%);
+}
+.circuit-flag-img {
+    height: 100%;
+    position: relative;
+}
+.circuit-track-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 70%;
+}
+.circuit-name {
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+}
+.track-country {
+    position: relative;
+    height: 1.1rem;
+    border-radius: .3rem;
+    margin: 0 .4rem 0 0;
+}
+.round-dash-container {
+    height: 1.4rem;
+    margin: 0 .35rem 0 0;
+}
+.round-dash {
+    height: 100%;
+}
+@media (max-width: 83rem) {
+    .main-content {
+        padding: 0 1.375rem;
+    }
+}
+@media (max-width: 62.49em) {
+    .hide {
+        display: none;
+    }
+    .event-date {
+        font-size: .8rem;
+    }
+    .event-name {
+        font-size: 1.5rem;
+    }
+    .track-country {
+        height: .9rem;
+    }
+    .circuit-name {
+        font-size: 1rem;
+    }
+    .round-status-container {
+        height: 2rem;
+        width: 6.5rem;
+        font-size: .8rem;
+        line-height: 2.3;
+    }
+}
+@media (max-width: 40em) {
+    .event-number-container {
+        width: 4.5rem;
+    }
+    .event-number {
+        font-size: 2.8rem;
+    }
+    .event-title {
+        font-size: .8rem;
+    }
+    .event {
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+    .main-container {
+        width: 80%;
+    }
+    .circuit-info {
+        margin: 0 .5rem 0 .5rem;
+        
+    }
+    .circuit-name {
+        line-height: 1;
+    }
+    .event-name {
+        font-size: 1.2rem;
+        line-height: 1.1;
+    }
+    .event-date {
+        line-height: 1.4;
+    }
+    .track-country {
+        height: .8rem;
+        border-radius: .2rem;
+    }
+    .round-dash-container {
+        height: 1.2rem;
+        margin: 0 .25rem 0 0;
+    }
+}
+@media (max-width: 22.5em) {
+    .event-number-container {
+        width: 3.5rem;
+    }
+    .event-number {
+        font-size: 2rem;
+    }
+    .event-title {
+        font-size: .7rem;
+    }
+    .event {
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+    .main-container {
+        width: 80%;
+    }
+    .circuit-info {
+        margin: 0 .5rem 0 .5rem;
+        
+    }
+    .circuit-name {
+        line-height: 1.2;
+        font-size: .8rem;
+    }
+    .event-name {
+        font-size: 1rem;
+        line-height: 1.1;
+    }
+    .event-date {
+        line-height: 1.4;
+    }
+    .track-country {
+        height: .8rem;
+        border-radius: .2rem;
+    }
+    .round-status {
+        line-height: 2;
+    }
+}

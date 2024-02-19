@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season 1 Results | R2 Saudi Arabia</title>
+    <link rel="icon" type="png" href="../../../img/misc/favicon.png">
+    <link rel="stylesheet" href="../../../CSS/Main CSS/stylesindex.css">
+    <link rel="stylesheet" href="../../../CSS/Main CSS/header.css">
+    <link rel="stylesheet" href="../../../CSS/Main CSS/footer.css">
+    <link rel="stylesheet" href="../../../CSS/Main CSS/sidebar.css">
+    <link rel="stylesheet" href="../../../CSS/Page Specific/results.css">
+    <link rel="stylesheet" href="../../../CSS/Page Specific/standings.css">
+    <script defer="defer" src="../../../JS/race-results.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+    <div id="mainHeader">
+        <header class="header">
+            <div class="logo">
+                <a href="/">
+                    <img src="../../../img/misc/VFSLogoWhite.png" alt="VFS Logo">
+                </a>
+            </div>
+        </header>
+    </div>
+    </nav>
+    <div class="navigation">
+        <label class="sidebar-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <a class="sidebar-links" href="../../../all-news.html">
+                    <h5 class="sidebar-links-text">Articles</h5>
+                </a>
+                <a class="sidebar-links" href="../../../calendar.html">
+                    <h5 class="sidebar-links-text">Calendar</h5>
+                </a>
+                <a class="sidebar-links" href="../../../standings/season-1/tier-1.html">
+                    <h5 class="sidebar-links-text">Standings</h5>
+                </a>
+                <a class="sidebar-links" href="../../../drivers/tier-1.html">
+                    <h5 class="sidebar-links-text">Drivers</h5>
+                </a>
+                <a class="sidebar-links" href="../../../records/all-time.html">
+                    <h5 class="sidebar-links-text">Records</h5>
+                </a>
+                <!--<a class="sidebar-links" href="../../../archives.html">
+                    <h5 class="sidebar-links-text">Archives</h5>
+                </a>
+                <a class="sidebar-links" href="../../../about-us.html">
+                    <h5 class="sidebar-links-text">About Us</h5>
+                </a>-->
+                <a class="sidebar-links" href="../../../contact-us.html">
+                    <h5 class="sidebar-links-text">Contact Us</h5>
+                </a>
+                <a class="sidebar-links" href="../../../register.html">
+                    <h5 class="sidebar-links-text">Register</h5>
+                </a>
+            </nav>
+        </aside>
+    </div>
+    <div class="page-title">
+        <div>
+            <h1 class="hide">Season 1 Results - Saudi Arabia</h1>
+            <h1 class="show">Season 1 Results<br>Saudi Arabia</h1>
+        </div>
+    </div>
+    <div class="track-tier-bar-container">
+        <!--<button class="tier-menu active" id="btn-1" title="Race">Race</button>
+        <button class="tier-menu" id="btn-2" title="Qualifying">
+            <div class="hide2">Qualifying</div>
+            <div class="show2">Q1</div>
+        </button>-->
+    </div>
+    <div class="selection-table">
+        <div class="selection-container-standings"> 
+            <div class="selections">
+                <div class="select-box-standings">Category</div>
+                <select id="links" size="1" onchange="window.location.href=this.value" class="select-container">
+                    <option value="../tier-1/saudi-arabia.html">F1 Tier 1</option>
+                    <option value="../tier-2/saudi-arabia.html">F1 Tier 2</option>
+                    <option selected value="../tier-3/saudi-arabia.html">F1 Tier 3</option>
+                </select>
+            </div>
+            <script>
+                function reset_options() {
+                    document.getElementById('links').options.length = 0;
+                    return true;
+                }
+            </script>
+            <body onbeforeunload="reset_options()"></body>
+        </div>
+    </div>
+
+    <div class="results-table">
+        <div class="not-yet-started-container">
+            <div class="not-yet-started-title">The F1 Tier 3 event has not yet commenced.</div>
+                <div class="description-container">
+                    <div class="not-yet-started-description">Round 2 of the F1 Tier 3 Championship is scheduled for Wednesday, 17 January, 2024 at&nbsp;
+                        <div id="time"></div>
+                    &nbsp;local time.
+                    </div>
+                </div>
+            </div>
+            <script src="../../../JS/convert-time.js"></script>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-socials">
+            <div class="socials-icons">
+                <a href="https://discord.gg/FwJ5JuAHNx" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../../../img/logos/socials/discord.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/virtualformulaseries.official/" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../../../img/logos/socials/instagram.png">
+                    </div>
+                </a>
+                <a href="https://www.twitter.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../../../img/logos/socials/twitter.png">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../../../img/logos/socials/youtube.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>VIRTUAL FORMULA SERIES 2023, ALL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+</html>

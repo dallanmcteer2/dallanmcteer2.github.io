@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFS Records | Tier 1</title>
+    <link rel="icon" type="png" href="../img/misc/favicon.png">
+    <link rel="stylesheet" href="../CSS/Main CSS/stylesindex.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/header.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/records.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/standings.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/sidebar.css">
+    <script defer="defer" src="../JS/records.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+    <div id="mainHeader">
+        <header class="header">
+            <div class="logo">
+                <a href="/">
+                    <img src="../img/misc/VFSLogoWhite.png" alt="VFS Logo">
+                </a>
+            </div>
+        </header>
+    </div>
+    </nav>
+    <div class="navigation">
+        <label class="sidebar-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <a class="sidebar-links" href="../all-news.html">
+                    <h5 class="sidebar-links-text">Articles</h5>
+                </a>
+                <a class="sidebar-links" href="../calendar.html">
+                    <h5 class="sidebar-links-text">Calendar</h5>
+                </a>
+                <a class="sidebar-links" href="../standings/season-1/tier-1.html">
+                    <h5 class="sidebar-links-text">Standings</h5>
+                </a>
+                <a class="sidebar-links" href="../drivers/tier-1.html">
+                    <h5 class="sidebar-links-text">Drivers</h5>
+                </a>
+                <a class="sidebar-links" href="../records/all-time.html">
+                    <h5 class="sidebar-links-text">Records</h5>
+                </a>
+                <!--<a class="sidebar-links" href="../archives.html">
+                    <h5 class="sidebar-links-text">Archives</h5>
+                </a>
+                <a class="sidebar-links" href="../about-us.html">
+                    <h5 class="sidebar-links-text">About Us</h5>
+                </a>-->
+                <a class="sidebar-links" href="../contact-us.html">
+                    <h5 class="sidebar-links-text">Contact Us</h5>
+                </a>
+                <a class="sidebar-links" href="../register.html">
+                    <h5 class="sidebar-links-text">Register</h5>
+                </a>
+            </nav>
+        </aside>
+    </div>
+    <div class="page-title">
+        <div>
+            <h1>VFS Records</h1>
+        </div>
+    </div>
+    <div class="records-bar-container">
+        <div class="records-sort-by-title">Sort Drivers By:</div>
+        <div class="menu-container">
+            <div class="inside-wrapper">
+                <div class="records-wrapper">
+                    <button class="records-menu active" id="btn-1" title="Race Wins">Wins</button>
+                    <button class="records-menu" id="btn-1" title="Poduims">Podiums</button>
+                    <button class="records-menu" id="btn-2" title="Pole Positions">Poles</button>
+                    <button class="records-menu" id="btn-3" title="Fastest Laps">
+                        <div class="hide2">Fastest Laps</div>
+                        <div class="show2">FLs</div>
+                    </button>
+                    <button class="records-menu" id="btn-4" title="Points">Points</button>
+                    <button class="records-menu" id="btn-5" title="Races">Races</button>
+                    <button class="records-menu" id="btn-6" title="Championships">Drivers' Titles</button>
+                    <button class="records-menu" id="btn-7" title="Constructors' Championships">Teams' Titles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="selection-table">
+        <div class="selection-container-standings"> 
+            <div class="selections">
+                <div class="select-box-standings">Category</div>
+                <select id="links" size="1" onchange="window.location.href=this.value" class="select-container">
+                    <option value="all-time.html">All Time</option>
+                    <option selected value="tier-1.html">F1 Tier 1</option>
+                    <option value="tier-2.html">F1 Tier 2</option>
+                </select>
+            </div>
+            <script>
+                function reset_options() {
+                    document.getElementById('links').options.length = 0;
+                    return true;
+                }
+            </script>
+            <body onbeforeunload="reset_options()"></body>
+        </div>
+    </div>
+    <div class="records-table">
+        <div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <div class="container-main">
+        <!--WINS RECORDS TABLE START-->
+        <div class="records-title-container" id="title-4">
+            <div class="records-title">F1 Tier 1 Wins</div>
+        </div>
+        <div class="records-table-box stats-not-available-container" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--PODIUMS RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 Tier 1 Podiums</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--POLES RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 Tier 1 Pole Positions</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--FASTEST LAPS RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 Tier 1 Fastest Laps</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--POINTS RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 Tier 1 Points</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--RACES RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 Tier 1 Races</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--DRIVERS CHAMPIONSHIPS RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 Tier 2 Drivers' Championships</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+        <!--CONSTRUCTORS CHAMPIONSHIPS RECORDS TABLE START-->
+        <div class="records-title-container hide-main" id="title-4">
+            <div class="records-title">F1 Tier 2 Constructors' Championships</div>
+        </div>
+        <div class="records-table-box stats-not-available-container hide-main" id="records-4">
+            <div class="stats-not-available">The current statistics that you are searching for are not yet available.</div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-socials">
+            <div class="socials-icons">
+                <a href="https://discord.gg/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/discord.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/virtualformulaseries.official/" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/instagram.png">
+                    </div>
+                </a>
+                <a href="https://www.twitter.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/twitter.png">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/virtualformulaseries" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/youtube.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>VIRTUAL FORMULA SERIES 2023, ALL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+</html>
