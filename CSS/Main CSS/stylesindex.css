@@ -74,7 +74,7 @@ a {
     span#title {
         font-size: 12vw;
         font-weight: 800;
-        text-shadow: 0 0 7px #c34b1b;
+        /* text-shadow: 0 0 7px #c34b1b; */
     }
     span#europe {
         font-size: 4.5vw;

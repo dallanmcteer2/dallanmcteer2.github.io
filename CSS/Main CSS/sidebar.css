@@ -144,11 +144,16 @@ body {
     .sidebar-menu input {
     transition: opacity var(--animation-timing-alt), width var(--animation-timing-alt), rotate var(--animation-timing-alt), translate var(--animation-timing-alt), background-color var(--animation-timing-alt); 
     }
-}
-@media (max-width: 22.5em) {
     :root {
         --bar-width: 50px;
         --bar-height: 6px;
         --hamburger-margin: 14.5px;
+    }
+}
+@media (max-width: 22.5em) {
+    :root {
+        --bar-width: 40px;
+        --bar-height: 3px;
+        --hamburger-margin: 12px;
     }
 }
