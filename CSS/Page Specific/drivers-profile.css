@@ -471,6 +471,7 @@
     }
     .driver-container-wrapper {
         height: auto;
+        margin-top: 60px;
     }
     .driver-container {
         height: 30rem;
@@ -532,6 +533,7 @@
         background-color: transparent;
         position: relative;
         top: 0;
+        font-size: 1.75rem;
     }
     .driver-extra-details-box {
         width: 100%;
@@ -557,7 +559,7 @@
         background-color: #18191A;
         position: relative;
         height: auto;
-        padding: 0 1.375rem 1.375rem 1.375rem;
+        padding: 0 0.6875rem 0.6875rem 0.6875rem;
     }
     .no-padding {
         padding: 0;
@@ -607,7 +609,8 @@
         font-size: .6rem;
     }
     .season-stats-stat-value, .driver-stats-stat-value {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
+        font-weight: 500;
     }
     .current-teammate-box {
         display: flex;
@@ -626,24 +629,26 @@
         background-color: #5A5A5A;
     }
     .teammate-name {
-        font-size: 1rem;
+        font-size: .9rem;
     }
     .teammate-misc-details {
         font-size: .8rem;
     }
     .teammate-nation {
-        width: 1.3rem;
+        width: 1.2rem;
+        border-radius: .2rem;
     }
     .driver-stats-menu-container {
         height: 4rem;
     }
     .driver-title-dash {
-        height: 3rem;
+        height: 2.6rem;
         margin: 0 .75rem 0 .5rem;
     }
     .driver-bio-table-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
         font-weight: 500;
+        line-height: 1.35;
     }
     .stats-menu {
         border-radius: 10px;
@@ -681,7 +686,7 @@
         font-size: .6rem;
     }
     .teammate-name {
-        font-size: .8rem;
+        font-size: .6rem;
     }
     .teammate-nation {
         display: none;
@@ -728,9 +733,6 @@
     }
     .driver-bio-table-title {
         font-size: 1.5rem;
-    }
-    .driver-container-wrapper {
-        margin-top: 60px;
     }
     .vfs-dash-profile {
         height: 1.8rem;

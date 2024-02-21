@@ -181,8 +181,9 @@
         line-height: 1;
     }
     .event-name {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.1;
+        padding: .35rem 0;
     }
     .event-date {
         line-height: 1.4;

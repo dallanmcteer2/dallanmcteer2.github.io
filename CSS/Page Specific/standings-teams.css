@@ -219,6 +219,11 @@ img {
 .standings-table-contents {
     max-height: 65px;
 }
+@media (max-width: 83em) {
+    .selection-table, .standings-table{
+        padding: 0 1.375rem;
+    }
+}
 @media (max-width: 62.49em) {
     .standings-table-box thead .team-standings-table-box-header {
         font-size: 0.8rem;
@@ -238,63 +243,64 @@ img {
         font-weight: 500;
         font-size: 1rem;
     }
-}
-@media (max-width: 62.49em) {
     .standings-table-box thead .team-position {
         width: 3rem;
     }
-}
-@media (max-width: 62.49em) {
     .standings-table-box thead .team-standings-table-box-header {
         padding: 0 1rem 0 1rem;
     }
-}
-@media (max-width: 62.49em) {
-    .standings-table-box thead .team-alt {
-        display: flex;
-        align-items: center;
+    .team-standings-table-team-details {
+        overflow: hidden;
+        width: 100%;
     }
-}
-@media (max-width: 62.49em) {
-    .standings-table-box thead .team-team .team-standings-table-box thead .team-alt {
-        width: auto;
-        text-align: left;
-        padding-left: 7rem;
+    .team-change-hide {
+        display: none!important;
     }
-}
-@media (max-width: 62.49em) {
+    .standings-table-box tbody .team-standings-table-logo {
+        height: 1.5rem;
+    }
+    .standings-table-box tbody .team-standings-table-row .team-p2 {
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+    .standings-table-box tbody .team-standings-table-row .team-p3 {
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+    .standings-table-box tbody .team-standings-table-row .team-p1 {
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+    .standings-table-box tbody .team-standings-table-row .team-standings-table-cell-points {
+        font-size: 1.1rem;
+    }
+    .team-standings-table-team-details .team-standings-team-image-container {
+        padding: 0 0.5rem 0 0;
+    }
+    .standings-table-box thead .team-points {
+        width: 3rem;
+        padding: 0 1rem 0 0;
+    }
+    .standings-table-box tbody .team-standings-table-row .team-standings-table-cell-position {
+        font-size: 1.1rem;
+        padding: 0;
+    }
     .standings-table-box thead .team-alt-box {
         display: flex;
         align-items: center;
         color: #fff;
     }
-}
-@media (max-width: 62.49em) {
-    .standings-table-box thead .team-points {
-        width: 3rem;
-        padding: 0 1rem 0 0;
+    .standings-table-box thead .team-alt {
+        display: flex;
+        align-items: center;
     }
-}
-@media (max-width: 62.49em) {
-    .standings-table-box tbody .team-standings-table-row .team-standings-table-cell-position {
-        font-size: 1.1rem;
+    .standings-table-box thead .team-team .team-standings-table-box thead .team-alt {
+        width: auto;
+        text-align: left;
+        padding-left: 7rem;
+    }
+    .standings-table {
         padding: 0;
-    }
-}
-@media (max-width: 62.49em) {
-    .team-standings-table-team-details {
-        overflow: hidden;
-        width: 100%;
-    }
-}
-@media (max-width: 62.49em) {
-    .team-standings-table-team-details .team-standings-team-image-container {
-        padding: 0 0.5rem 0 0;
-    }
-}
-@media (max-width: 62.49em) {
-    .team-change-hide {
-        display: none!important;
     }
 }
 @media (min-width: 62.49em) {
@@ -302,51 +308,6 @@ img {
         display: none!important;
     }
 }
-@media (max-width: 62.49em) {
-    .standings-table-box tbody .team-standings-table-logo {
-        height: 1.5rem;
-    }
-}
-@media (max-width: 62.49em) {
-    .standings-table-box tbody .team-standings-table-row .team-standings-table-cell-points {
-        font-size: 1.1rem;
-    }
-}
-@media (max-width: 62.49em) {
-    .standings-table-box tbody .team-standings-table-row .team-p1 {
-        font-size: 1.1rem;
-        white-space: nowrap;
-    }
-}
-@media (max-width: 62.49em) {
-    .standings-table-box tbody .team-standings-table-row .team-p2 {
-        font-size: 1.1rem;
-        white-space: nowrap;
-    }
-}
-@media (max-width: 62.49em) {
-    .standings-table-box tbody .team-standings-table-row .team-p3 {
-        font-size: 1.1rem;
-        white-space: nowrap;
-    }
-}
-/*@media (max-width: 75em) {
-    .selections {
-        max-width: 100%;
-        align-items: center;
-    }
-}*/
-@media (max-width: 83em) {
-    .selection-table, .standings-table{
-        padding: 0 1.375rem;
-    }
-}
-/*@media (max-width: 45em) {
-    .select-container {
-        font-size: 0.8rem;
-    }
-}*/
-
 @media (max-width: 22.5em) {
     .standings-table-box tbody .team-standings-table-row .team-standings-table-cell-position {
         font-size: 1rem;

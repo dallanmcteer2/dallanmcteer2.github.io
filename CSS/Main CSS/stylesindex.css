@@ -105,6 +105,9 @@ a {
     .hide {
         display: none;
     }
+    .page-title {
+        margin-top: 60px;
+    }
 }
 @media (min-width: 62.49em) {
     .show {
@@ -112,9 +115,6 @@ a {
     }
 }
 @media (max-width: 22.5em) {
-    .page-title {
-        margin-top: 60px;
-    }
     h1 {
         font-size: 23px;
     }
