@@ -252,6 +252,7 @@ img {
     font-size: 1.4rem;
     cursor: pointer;
     width: 18rem;
+    transition: .15s ease-in-out;
 }
 .championship-menu:first-of-type {
     margin: 0;
@@ -395,7 +396,6 @@ img {
         background-color: transparent;
         color: #c34b1b;
         font-weight: 600;
-        transition: .15s ease-in-out;
     }
 }
 @media (min-width: 62.49em) {

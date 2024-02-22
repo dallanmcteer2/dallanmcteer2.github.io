@@ -371,7 +371,7 @@ img {
     }
     .results-table-box thead .time-gap-quali {
         width: 4.5rem;
-        padding: 0 .5rem 0 0;
+        padding: 0 .75rem 0 0;
     }
     .results-table-box thead .driver-team-box {
         display: flex;
