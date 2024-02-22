@@ -38,6 +38,8 @@
 @media (max-width: 83em) {
     .main-contact-content {
         padding: 0 1.375rem;
+        top: 8rem;
+        position: relative;
     }
     .contact-vfs-logo-container {
         height: 20rem;

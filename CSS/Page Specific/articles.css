@@ -195,6 +195,14 @@
     .featured-articles {
         -webkit-column-gap: 12px;
         column-gap: 12px;
+        flex-direction: column;
+    }
+    .featured-content {
+        width: 100%;
+        max-width: none;
+    }
+    .featured-content:first-of-type {
+        margin-bottom: 40px;
     }
 }
 @media (max-width: 22.5em) {

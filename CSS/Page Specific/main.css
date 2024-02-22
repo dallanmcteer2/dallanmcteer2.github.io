@@ -51,18 +51,19 @@
     }
     .events-title {
         display: flex;
-        font-size: 1.3rem;
-        height: 1.74rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        height: 1.6rem;
     }
     .vfs-events-dash {
         margin: 0 .5rem 0 0;
     }
     .all-events-link {
-        font-size: 1.1rem;
+        font-size: .9rem;
         margin: 0 .25rem 0 0;
     }
     .title {
-        line-height: 1;
+        line-height: .8;
     }
     .all-events-link-arrow {
         display: none;
@@ -80,7 +81,7 @@
 }
 @media (max-width: 22.5em) {
     .events-title {
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 700;
         height: 1.5rem;
     }

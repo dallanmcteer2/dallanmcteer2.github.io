@@ -256,6 +256,11 @@ img {
 .stats-not-available-container {
     border: none;
 }
+@media (max-width: 83em) {
+    .selection-table, .records-table, .container-main {
+        padding: 0 1.375rem;
+    }
+}
 @media (max-width: 62.49em) {
     .records-table-box thead .records-position {
         width: 3rem;
@@ -392,8 +397,8 @@ img {
         width: 1rem;
     }
     .records-title-container {
-        font-size: 2rem;
-        font-weight: 600;
+        font-size: 1.75rem;
+        font-weight: 500;
         margin: 0 0 1rem 0;
     }
     .records-table-box thead .records-stat-large {
@@ -411,15 +416,13 @@ img {
     .records-menu:first-of-type {
         margin: 0 0 0 0;
     }
-}
-@media (max-width: 83em) {
-    .selection-table, .records-table, .container-main {
-        padding: 0 1.375rem;
+    .records-table {
+        padding: 0;
     }
 }
 @media (max-width: 40em) {
     .stats-not-available {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 22.5em) {
