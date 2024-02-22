@@ -370,7 +370,7 @@ img {
         padding: 0 1rem 0 0;
     }
     .results-table-box thead .time-gap-quali {
-        width: 4rem;
+        width: 4.5rem;
         padding: 0 .5rem 0 0;
     }
     .results-table-box thead .driver-team-box {
@@ -405,19 +405,19 @@ img {
         width: 70%;
     }
     .results-table-box tbody .results-table-row .results-table-cell-full-name, .results-table-box tbody .results-table-row .results-table-cell-number, .results-table-box tbody .results-table-row .results-table-cell-penalties, .results-table-box tbody .results-table-row .results-table-cell-time-gap, .results-table-box tbody .results-table-row .results-table-cell-time-gap-quali {
-        font-size: 1rem;
+        font-size: .9rem;
         min-width: 0;
         padding: 0 0.5rem 0 0;
     }
     .results-table-box tbody .results-table-row .results-table-cell-time-gap-quali {
-        font-size: .9rem;
+        font-size: .8rem;
     }
     .results-table-box tbody .results-table-flag {
-        height: .8rem;
+        height: .75rem;
         border-radius: 0.2rem;
     }
     .results-table-box tbody .results-table-row .results-table-cell-team {
-        font-size: .9rem;
+        font-size: .8rem;
         color: #fff;
         white-space: nowrap;
         overflow: hidden;
@@ -463,38 +463,39 @@ img {
         padding-left: 7rem;
     }
     .session-title-dash {
-        height: 2.7rem;
-        margin: 0 .75rem 0 0;
+        height: 2rem;
+        margin: 0 .5rem 0 0;
     }
     .session-info-title {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         padding: 1rem .5rem;
     }
     .color-dash {
-        height: 1.4rem;
+        height: 1.2rem;
     }
     .table-data {
         margin: 0 0 .5rem .4rem;
+        line-height: 1.3;
     }
     .info-section {
         margin: 0 0 .5rem 0;
     }
     .box-title {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .driver-team-logo {
-        height: 1.3rem;
+        height: 1.2rem;
     }
     .driver-name {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.1;
         top: -.22rem;
     }
     .box-data {
-        font-size: 1.1rem;
+        font-size: .9rem;
     }
     .box-tyre {
-        height: 1.5rem;
+        height: 1.1rem;
     }
     .box-info {
         margin: .2rem 0 0 0;
