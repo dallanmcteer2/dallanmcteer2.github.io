@@ -91,6 +91,7 @@ a {
     }
     .BackgroundImg {
         background-position-x: 40%;
+        object-fit: cover;
     }
     h1 {
         font-size: 32px;
