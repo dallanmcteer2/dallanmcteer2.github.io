@@ -92,6 +92,7 @@ a {
     .BackgroundImg {
         background-position-x: 40%;
         background-size: auto 100%;
+        max-width: 1400px;
     }
     h1 {
         font-size: 32px;
