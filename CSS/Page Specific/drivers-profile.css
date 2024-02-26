@@ -637,6 +637,7 @@
     .teammate-nation {
         width: 1.2rem;
         border-radius: .2rem;
+        margin: 0 .5rem 0 0;
     }
     .driver-stats-menu-container {
         height: 4rem;
@@ -648,7 +649,7 @@
     .driver-bio-table-title {
         font-size: 1.75rem;
         font-weight: 500;
-        line-height: 1.35;
+        line-height: 1.4;
     }
     .stats-menu {
         border-radius: 10px;

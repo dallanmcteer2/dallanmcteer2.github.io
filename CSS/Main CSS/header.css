@@ -41,7 +41,7 @@ img[src="../../img/misc/VFSLogoWhite.png"] {
     height: 75px;
     display: block;
 }
-@media (max-width: 40em) {
+@media (max-width: 62.49em) {
     .logo {
         margin: 0 0 0 1.5rem;
         height: 60px;
