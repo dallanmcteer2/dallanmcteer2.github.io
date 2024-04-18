@@ -254,7 +254,8 @@ img {
 }
 .table-data {
     margin: 0 0 .75rem .4rem;
-    line-height: 1.2;
+    line-height: 1.25;
+    font-size: 1.3rem;
 }
 .color-dash {
     height: 1.7rem;

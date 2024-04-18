@@ -7,12 +7,12 @@
     align-self: flex-start;
     flex-grow: 1;
 }
-.archives-vfs-logo-container {
+.archives-pcs-logo-container {
     width: auto;
     height: 22.5rem;
     margin: 3rem 0;
 }
-.archives-vfs-logo {
+.archives-pcs-logo {
     height: 100%;
     width: 100%;
 }
@@ -81,24 +81,24 @@
     .main-archives-content {
         padding: 0 1.375rem;
     }
-    .archives-vfs-logo-container {
+    .archives-pcs-logo-container {
         height: 20rem;
     }
 }
 @media (max-width: 62.49em) {
-    .archives-vfs-logo-container {
+    .archives-pcs-logo-container {
         width: 20rem;
         height: auto;
         margin: 2rem 0;
     }
 }
 @media (max-width: 40em) {
-    .archives-vfs-logo-container {
+    .archives-pcs-logo-container {
         width: 15rem;
     }
 }
 @media (max-width: 22.5em) {
-    .archives-vfs-logo-container {
+    .archives-pcs-logo-container {
         width: 13rem;
     }
 }

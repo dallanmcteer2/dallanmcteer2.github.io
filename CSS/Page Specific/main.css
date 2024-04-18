@@ -8,7 +8,7 @@
     justify-content: space-between;
     margin: 0 0 1.5rem 0;
 }
-.vfs-events-dash {
+.pcs-events-dash {
     height: 100%;
     margin: 0 .75rem 0 0;
 }
@@ -55,7 +55,7 @@
         font-weight: 600;
         height: 1.6rem;
     }
-    .vfs-events-dash {
+    .pcs-events-dash {
         margin: 0 .5rem 0 0;
     }
     .all-events-link {
@@ -85,7 +85,7 @@
         font-weight: 700;
         height: 1.5rem;
     }
-    .vfs-events-dash {
+    .pcs-events-dash {
         margin: 0 .3rem 0 0;
     }
     .all-events-link {

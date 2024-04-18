@@ -7,12 +7,12 @@
     align-self: flex-start;
     flex-grow: 1;
 }
-.contact-vfs-logo-container {
+.contact-pcs-logo-container {
     width: auto;
     height: 22.5rem;
     margin: 3rem 0;
 }
-.contact-vfs-logo {
+.contact-pcs-logo {
     height: 100%;
     width: 100%;
 }
@@ -41,12 +41,12 @@
         top: 0;
         position: relative;
     }
-    .contact-vfs-logo-container {
+    .contact-pcs-logo-container {
         height: 20rem;
     }
 }
 @media (max-width: 62.49em) {
-    .contact-vfs-logo-container {
+    .contact-pcs-logo-container {
         width: 20rem;
         height: auto;
         margin: 2rem 0;
@@ -71,7 +71,7 @@
     .contact-text-link {
         font-size: 1rem;
     }
-    .contact-vfs-logo-container {
+    .contact-pcs-logo-container {
         width: 15rem;
     }
 }
@@ -81,7 +81,7 @@
     }
 }
 @media (max-width: 22.5em) {
-    .contact-vfs-logo-container {
+    .contact-pcs-logo-container {
         width: 13rem;
     }
 }

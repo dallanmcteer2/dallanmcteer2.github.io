@@ -5,12 +5,12 @@
     align-items: center;
     text-align: center;
 }
-.vfs-404-logo-container {
+.pcs-404-logo-container {
     width: auto;
     height: 22.5rem;
     margin: 3rem 0;
 }
-.vfs-404-logo {
+.pcs-404-logo {
     height: 100%;
     width: 100%;
 }
@@ -41,12 +41,12 @@
     .main-404-content {
         padding: 0 1.375rem;
     }
-    .vfs-404-logo-container {
+    .pcs-404-logo-container {
         height: 20rem;
     }
 }
 @media (max-width: 62.49em) {
-    .vfs-404-logo-container {
+    .pcs-404-logo-container {
         width: 20rem;
         height: auto;
     }

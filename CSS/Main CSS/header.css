@@ -25,19 +25,19 @@
     height: 100%;
     overflow: hidden;
 }
-img[src="img/misc/VFSLogoWhite.png"] {
+img[src="img/misc/PCSLogoWhite.png"] {
     height: 75px;
     display: block;
 }
-img[src="../../../img/misc/VFSLogoWhite.png"] {
+img[src="../../../img/misc/PCSLogoWhite.png"] {
     height: 75px;
     display: block;
 }
-img[src="../img/misc/VFSLogoWhite.png"] {
+img[src="../img/misc/PCSLogoWhite.png"] {
     height: 75px;
     display: block;
 }
-img[src="../../img/misc/VFSLogoWhite.png"] {
+img[src="../../img/misc/PCSLogoWhite.png"] {
     height: 75px;
     display: block;
 }
@@ -51,16 +51,16 @@ img[src="../../img/misc/VFSLogoWhite.png"] {
     .main-nav {
         height: 60px;
     }
-    img[src="img/misc/VFSLogoWhite.png"] {
+    img[src="img/misc/PCSLogoWhite.png"] {
         height: 50px;
     }
-    img[src="../../../img/misc/VFSLogoWhite.png"] {
+    img[src="../../../img/misc/PCSLogoWhite.png"] {
         height: 50px;
     }
-    img[src="../img/misc/VFSLogoWhite.png"] {
+    img[src="../img/misc/PCSLogoWhite.png"] {
         height: 50px;
     }
-    img[src="../../img/misc/VFSLogoWhite.png"] {
+    img[src="../../img/misc/PCSLogoWhite.png"] {
         height: 50px;
     }
 }
@@ -72,16 +72,16 @@ img[src="../../img/misc/VFSLogoWhite.png"] {
     .main-nav {
         height: 45px;
     }
-    img[src="img/misc/VFSLogoWhite.png"] {
+    img[src="img/misc/PCSLogoWhite.png"] {
         height: 40px;
     }
-    img[src="../../../img/misc/VFSLogoWhite.png"] {
+    img[src="../../../img/misc/PCSLogoWhite.png"] {
         height: 40px;
     }
-    img[src="../img/misc/VFSLogoWhite.png"] {
+    img[src="../img/misc/PCSLogoWhite.png"] {
         height: 40px;
     }
-    img[src="../../img/misc/VFSLogoWhite.png"] {
+    img[src="../../img/misc/PCSLogoWhite.png"] {
         height: 40px;
     }
 }

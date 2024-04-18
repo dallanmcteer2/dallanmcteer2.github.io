@@ -355,11 +355,11 @@
 .williams {
     background: #000 linear-gradient(90deg, #000 20%, #37BEDD 350%);
 }
-.alphatauri {
-    background: #000 linear-gradient(90deg, #000 20%, #5E8FAA 350%);
+.racing-bulls {
+    background: #000 linear-gradient(90deg, #000 20%, #6692FF 350%);
 }
-.alfa-romeo {
-    background: #000 linear-gradient(90deg, #000 20%, #C92D4B 350%);
+.kick-sauber {
+    background: #000 linear-gradient(90deg, #000 20%, #52E252 350%);
 }
 .haas {
     background: #000 linear-gradient(90deg, #000 20%, #B6BABD 350%);
@@ -443,11 +443,11 @@
 .esports-value:hover {
     text-decoration-color: #c34b1b;
 }
-.vfs-dash-profile {
+.pcs-dash-profile {
     height: 2.5rem;
     margin: 0 .5rem 0 0;
 }
-.vfs-dash {
+.pcs-dash {
     height: 100%;
 }
 @media (max-width: 83em) {
@@ -593,11 +593,11 @@
         padding: 0;
         border-top: solid 1px #37BEDD;
     }
-    .alphatauri {
+    .racing-bulls {
         padding: 0;
         border-top: solid 1px #5E8FAA;
     }
-    .alfa-romeo {
+    .kick-sauber {
         padding: 0;
         border-top: solid 1px #C92D4B;
     }
@@ -710,6 +710,9 @@
     .driver-container-extend {
         height: 49.9rem;
     }
+    .driver-container-wrapper {
+        margin-top: 45px;
+    }
     .driver-stats-menu-container {
         height: 3rem;
         justify-content: center;
@@ -735,7 +738,7 @@
     .driver-bio-table-title {
         font-size: 1.5rem;
     }
-    .vfs-dash-profile {
+    .pcs-dash-profile {
         height: 1.8rem;
         margin: 0 .5rem 0 0;
     }
