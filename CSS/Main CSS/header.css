@@ -41,6 +41,10 @@ img[src="../../img/misc/PCSLogoWhite.png"] {
     height: 75px;
     display: block;
 }
+img[src="/img/misc/PCSLogoWhite.png"] {
+    height: 75px;
+    display: block;
+}
 @media (max-width: 62.49em) {
     .logo {
         margin: 0 0 0 1.5rem;
@@ -63,6 +67,9 @@ img[src="../../img/misc/PCSLogoWhite.png"] {
     img[src="../../img/misc/PCSLogoWhite.png"] {
         height: 50px;
     }
+    img[src="/img/misc/PCSLogoWhite.png"] {
+        height: 50px;
+    }
 }
 @media (max-width: 22.5em) {
     .logo {
@@ -82,6 +89,9 @@ img[src="../../img/misc/PCSLogoWhite.png"] {
         height: 40px;
     }
     img[src="../../img/misc/PCSLogoWhite.png"] {
+        height: 40px;
+    }
+    img[src="/img/misc/PCSLogoWhite.png"] {
         height: 40px;
     }
 }
