@@ -10,9 +10,9 @@ function handleClick(e, index) {
         stat.classList.add("hide-main");
     });
     btns.forEach((btn) => {
-        btn.classList.remove("active");
+        btn.classList.remove("drivers-active");
     });
 
     stats[index].classList.remove("hide-main");
-    btns[index].classList.add("active");
+    btns[index].classList.add("drivers-active");
 }
