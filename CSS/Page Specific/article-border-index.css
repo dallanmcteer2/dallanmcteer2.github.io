@@ -38,3 +38,10 @@ legend:hover h6 {
 .no-margin {
     margin: 0;
 }
+@media (max-width: 40em) {
+    .article-border-mobile {
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+    }
+}

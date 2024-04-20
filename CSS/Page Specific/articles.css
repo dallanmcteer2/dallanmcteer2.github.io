@@ -205,6 +205,25 @@
         margin-bottom: 40px;
     }
 }
+@media (max-width: 40em) {
+    .more-news {
+        flex-direction: column;
+    }
+    .more-articles {
+        margin: 0 0 10px 0;
+        padding: 1rem 0;
+        max-width: none;
+        width: 100%;
+        flex-flow: row;
+        border: solid 2px #5A5A5A;
+        border-radius: 7px;
+    }
+    .mobile-image-box-container {
+        width: 65%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
 @media (max-width: 22.5em) {
     .featured-articles {
         flex-direction: column;
