@@ -128,8 +128,8 @@ a {
 }
 @media (max-width: 40em) {
     h3 {
-        padding: 0 .5rem;
-        margin: auto .5rem auto 0;
+        padding: 0.5rem;
+        margin: auto 0;
         text-align: initial;
     }
 }
