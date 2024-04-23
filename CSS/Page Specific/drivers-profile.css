@@ -31,7 +31,7 @@
     top: 0;
     opacity: .32;
 }
-.driver-background-team-logo {
+.driver-background-team-logo, .driver-background-number-logo {
     position: absolute;
     opacity: .24;
     height: 70%;
