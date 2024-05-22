@@ -458,6 +458,39 @@
 .pcs-dash {
     height: 100%;
 }
+.button-container-large {
+    height: 10rem;
+}
+.buttons {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+    user-select: none;
+    align-items: center;
+    min-width: 25%;
+    max-height: 7.5rem;
+}
+.tier-buttons {
+    overflow-y: scroll;
+    width: 25%;
+    flex-direction: column-reverse;
+}
+input[name="tier"], input[name="platform"] {
+    display: none;
+}
+input[type="radio"]:checked + label {
+    font-weight: 600;
+    color: #c34b1b;
+    transition: .2s ease-in-out;
+}
+label {
+    cursor: pointer;
+}
+.separator {
+    height: 80%;
+    border: #c34b1b 1px solid;
+}
 @media (max-width: 83em) {
     .driver-info-container {
         padding: 0 1.375rem;
@@ -573,46 +606,6 @@
         padding: 0;
         border-top: solid 1px #c34b1b;
     }
-    /*.red-bull {
-        padding: 0;
-        border-top: solid 1px #3671C6;
-    }
-    .mercedes {
-        padding: 0;
-        border-top: solid 1px #6CD3BF;
-    }
-    .ferrari {
-        padding: 0;
-        border-top: solid 1px #F91536;
-    }
-    .mclaren {
-        padding: 0;
-        border-top: solid 1px #F58020;
-    }
-    .aston-martin {
-        padding: 0;
-        border-top: solid 1px #358C75;
-    }
-    .alpine {
-        padding: 0;
-        border-top: solid 1px #2293D1;
-    }
-    .williams {
-        padding: 0;
-        border-top: solid 1px #37BEDD;
-    }
-    .racing-bulls {
-        padding: 0;
-        border-top: solid 1px #5E8FAA;
-    }
-    .kick-sauber {
-        padding: 0;
-        border-top: solid 1px #C92D4B;
-    }
-    .haas {
-        padding: 0;
-        border-top: solid 1px #B6BABD;
-    }*/
     .season-stats-title, .driver-stats-title {
         font-size: .6rem;
     }
@@ -650,6 +643,9 @@
     .driver-stats-menu-container {
         height: 4rem;
     }
+    .button-container-large {
+        height: 7rem;
+    }
     .driver-title-dash {
         height: 2.6rem;
         margin: 0 .75rem 0 .5rem;
@@ -673,6 +669,11 @@
     }
     .driver-bio-table {
         padding: .25rem .5rem;
+    }
+    .buttons {
+        font-size: 1.1em;
+        min-width: 50%;
+        max-height: 5.75rem;
     }
 }
 @media (min-width: 62.49em) {

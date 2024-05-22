@@ -10,10 +10,10 @@ function reveal(){
         var revealpoint = 150;
 
         if(revealtop < windowheight - revealpoint){
-            reveals[i].classList.add('animate');   
+            reveals[i].classList.add('animate__animated', 'animate__fadeInUp');   
         } 
         // else {
-        //     reveals[i].classList.remove('animate');
+        //     reveals[i].classList.remove('animate__animated', 'animate__fadeInUp');
         // }
     }
 }

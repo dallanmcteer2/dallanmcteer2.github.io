@@ -79,13 +79,10 @@ a {
 }
 .reveal {
     position: relative;
-    transform: translateY(65px);
     opacity: 0;
-    transition: all .75s ease-in-out;
-}
-.animate {
-    transform: translateY(0px);
-    opacity: 1;
+    /* transform: translateY(65px);
+    opacity: 0;
+    transition: all .75s ease-in-out;*/
 }
 @media (max-width: 62.49em) {
     span#title {
