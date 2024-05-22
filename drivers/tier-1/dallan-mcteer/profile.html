@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="/img/misc/favicon.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/img/misc/apple-icon-192x192.png">
+    <link rel="stylesheet" href="/CSS/Main CSS/stylesindex.css">
+    <link rel="stylesheet" href="/CSS/Main CSS/header.css">
+    <link rel="stylesheet" href="/CSS/Main CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/Main CSS/sidebar.css">
+    <link rel="stylesheet" href="/CSS/Page Specific/drivers-profile.css">
+    <!-- <script defer="defer" src="/JS/driver-profiles.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="/JS/driver-stats-buttons.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            statsToggleResults();
+        })
+    </script>
+    <title>PCS Drivers | D. McTeer</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <div id="mainHeader">
+            <header class="header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/img/misc/PCSLogoWhite.png" alt="PCS Logo">
+                    </a>
+                </div>
+            </header>
+        </div>
+    </nav>
+    <div class="navigation">
+        <label class="sidebar-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <a class="sidebar-links" href="/all-news">
+                    <h5 class="sidebar-links-text">Articles</h5>
+                </a>
+                <a class="sidebar-links" href="/calendar">
+                    <h5 class="sidebar-links-text">Calendar</h5>
+                </a>
+                <a class="sidebar-links" href="/standings/season-1/tier-1">
+                    <h5 class="sidebar-links-text">Standings</h5>
+                </a>
+                <a class="sidebar-links" href="/drivers/tier-1">
+                    <h5 class="sidebar-links-text">Drivers</h5>
+                </a>
+                <a class="sidebar-links" href="/records/all-time">
+                    <h5 class="sidebar-links-text">Records</h5>
+                </a>
+                <!--<a class="sidebar-links" href="/archives">
+                    <h5 class="sidebar-links-text">Archives</h5>
+                </a>
+                <a class="sidebar-links" href="/about-us">
+                    <h5 class="sidebar-links-text">About Us</h5>
+                </a>-->
+                <a class="sidebar-links" href="/contact-us">
+                    <h5 class="sidebar-links-text">Contact Us</h5>
+                </a>
+                <a class="sidebar-links" href="/register">
+                    <h5 class="sidebar-links-text">Register</h5>
+                </a>
+            </nav>
+        </aside>
+    </div>
+    
+<div class="main-content">
+    <div class="driver-container-wrapper">
+        <div class="driver-container">
+            <div class="driver-background">
+                <div class="driver-background-team-color" style="background-color: #F58020;"></div>
+                <div class="driver-background-image-container">
+                    <img class="driver-background-team-logo" src="/img/logos/teams/McLaren2.png">
+                </div>
+                <div class="driver-background-team-gradient"></div>
+            </div>
+            <div class="driver-info hide">
+                <div class="driver-name">
+                    <div class="driver-name-first">
+                        Dallan
+                    </div>
+                    <div class="driver-name-last">
+                        McTeer
+                    </div>
+                </div>
+                <!-- <div class="driver-number">
+                    #32
+                </div> -->
+                <div class="driver-number-image-container">
+                    <img class="driver-number-image" src="/img/driver-numbers/mclaren/32.png">
+                </div>
+                <div class="driver-details-box">
+                    <span class="driver-details-nationality">
+                        <div class="driver-details-flag-box">
+                            <img src="/img/nations/usa.png" class="driver-details-flag">
+                        </div>
+                        United States
+                    </span>
+                    <span class="driver-details-team">
+                        McLaren Formula 1 Team
+                    </span>
+                </div>
+            </div>
+            <div class="driver-image">
+                <div class="driver-image-container">
+                    <img class="hide" src="/img/driver-images/DallanMcTeer1.png">
+                    <img class="show" src="/img/driver-images/DallanMcTeer1Full.png">
+                </div>
+            </div>
+        </div>
+        <div class="driver-extra-details">
+            <div class="driver-extra-details-wrapper">
+                <div class="driver-info show">
+                    <div class="driver-name">
+                        <div class="driver-name-full">
+                            Dallan McTeer
+                        </div>
+                    </div>
+                    <div class="driver-number">
+                        #32
+                    </div>
+                    <div class="driver-details-box">
+                        <span class="driver-details-team">
+                            <div class="driver-details-team-logo-container">
+                                <img src="/img/logos/teams/McLaren.png" class="driver-details-team-logo">
+                            </div>
+                            McLaren Formula 1 Team
+                        </span>
+                        <span class="driver-details-nationality">
+                            <div class="driver-details-flag-box">
+                                <img src="/img/nations/usa.png" class="driver-details-flag">
+                            </div>
+                            United States
+                        </span>
+                    </div>
+                </div>
+                <div class="current-season-wrapper">
+                    <div class="current-season-wrapper no-padding">
+                        <div class="driver-extra-details-title">
+                            <div class="pcs-dash-profile">
+                                <img class="pcs-dash" src="/img/misc/pcs-orange-dash.png">
+                            </div>
+                            SEASON STATS
+                        </div>
+                        <div class="driver-extra-details-box">
+                            <div class="driver-extra-details-stats-box">
+                                <div class="driver-extra-details-stats1">
+                                    <div class="season-stats-title">POSITION</div>
+                                    <div class="season-stats-stat-value">9</div>
+                                </div>
+                                <div class="driver-extra-details-stats1">
+                                    <div class="season-stats-title">POINTS</div>
+                                    <div class="season-stats-stat-value">59</div>
+                                </div>
+                                <div class="driver-extra-details-stats1 edge">
+                                    <div class="season-stats-title">WINS</div>
+                                    <div class="season-stats-stat-value">0</div>
+                                </div>
+                                <div class="driver-extra-details-stats2">
+                                    <div class="season-stats-title">PODIUMS</div>
+                                    <div class="season-stats-stat-value">1</div>
+                                </div>
+                                <div class="driver-extra-details-stats2">
+                                    <div class="season-stats-title">DNFs</div>
+                                    <div class="season-stats-stat-value">2</div>
+                                </div>
+                                <div class="driver-extra-details-stats2 edge">
+                                    <div class="season-stats-title">PENALTY POINTS</div>
+                                    <div class="season-stats-stat-value">2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="current-teammate-box" href="../tier-1/anton-chebotarov" title="View Driver Profile">
+                            <div class="teammate-details-wrapper">
+                                <div class="teammate-image-container">
+                                    <img src="/img/misc/silhouette2.png" class="teammate-image">
+                                </div>
+                                <div class="teammate-info">
+                                    <div class="teammate-details-info">
+                                        <div class="teammate-misc-details">
+                                            <div class="teammate-title">TEAMMATE</div>
+                                            <div class="teammate-number">#95</div>
+                                        </div>
+                                        <div class="teammate-main-details">
+                                            <div class="teammate-nation">
+                                                <img src="/img/nations/ukraine.png" class="teammate-nation">
+                                            </div>
+                                            <div class="teammate-name">ANTON CHEBOTAROV</div>
+                                        </div>
+                                    </div>
+                                    <div class="teammate-arrow">
+                                        <img src="/img/misc/orange-arrow-right.png" class="right-arrow">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="driver-stats">
+        <div class="driver-full-stats-box">
+            <div class="driver-stats-menu-container button-container-large mclaren">
+                <!-- <div class="driver-stats-menu" id="driver-menu"> -->
+                    <div class="buttons">
+                        <input type="radio" name="platform" id="all-platforms-button" onchange="statsToggleResults()" checked>
+                        <label for="all-platforms-button" id="label-button">All Platforms</label>
+                        <input type="radio" name="platform" id="pc-steam-button" onchange="statsToggleResults()">
+                        <label for="pc-steam-button" id="label-button">PC (Steam)</label>
+                        <input type="radio" name="platform" id="playstation-button" onchange="statsToggleResults()">
+                        <label for="playstation-button" id="label-button">Playstation</label>
+                        <input type="radio" name="platform" id="xbox-button" onchange="statsToggleResults()">
+                        <label for="xbox-button" id="label-button">Xbox</label>
+                    </div>
+                    <div class="separator" id="separator"></div>
+                    <div class="buttons tier-buttons">
+                        <input type="radio" name="tier" id="tier-1-button" onchange="statsToggleResults()" checked>
+                        <label for="tier-1-button" id="label-button">Tier 1</label>
+                        <input type="radio" name="tier" id="tier-2-button" onchange="statsToggleResults()">
+                        <label for="tier-2-button" id="label-button">Tier 2</label>
+                        <input type="radio" name="tier" id="tier-3-button" onchange="statsToggleResults()">
+                        <label for="tier-3-button" id="label-button">Tier 3</label>
+                        <input type="radio" name="tier" id="tier-4-button" onchange="statsToggleResults()">
+                        <label for="tier-4-button" id="label-button">Tier 4</label>
+                        <input type="radio" name="tier" id="tier-5-button" onchange="statsToggleResults()">
+                        <label for="tier-5-button" id="label-button">Tier 5</label>
+                        <input type="radio" name="tier" id="tier-6-button" onchange="statsToggleResults()">
+                        <label for="tier-6-button" id="label-button">Tier 6</label>
+                    </div>
+            </div>
+            <div class="driver-info-container">
+                <div class="driver-stats-container">
+                    <div class="driver-bio-table-title">
+                        <img class="driver-title-dash" src="/img/misc/pcs-orange-dash.png">
+                        <div class="driver-title"></div>
+                    </div>
+                    <div class="stats-js" id="stats-js"></div>
+                </div>
+                <div class="driver-bio-container">
+                    <div class="driver-bio-table-title">
+                        <img class="driver-title-dash" src="/img/misc/pcs-orange-dash.png">
+                        Driver Bio
+                    </div>
+                    <table class="driver-bio-table">
+                        <tbody>
+                            <tr class="table-row">
+                                <th scope="row" class="info-title">League Team</th>
+                                <td class="info-value hide">McLaren Formula 1 Team</td>
+                                <td class="info-value show">McLaren</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th scope="row" class="info-title">Esports Team</th>
+                                <td class="info-value">N/A</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th scope="row" class="info-title">Driver Number</th>
+                                <td class="info-value">#32</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th scope="row" class="info-title">Nationality</th>
+                                <td class="info-value">United States</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th scope="row" class="info-title">Total Points</th>
+                                <td class="info-value">517</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th scope="row" class="info-title">Best Race Position</th>
+                                <td class="info-value">1 (x10)</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th scope="row" class="info-title">Best Quali Position</th>
+                                <td class="info-value">1 (x11)</td>
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="footer-socials">
+            <div class="socials-icons">
+                <a href="https://discord.gg/FwJ5JuAHNx" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="/img/logos/socials/discord.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/premierclasssim/" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="/img/logos/socials/instagram.png">
+                    </div>
+                </a>
+                <a href="https://www.twitter.com/premierclasssim" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="/img/logos/socials/twitter.png">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/premierclasssimracing" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="/img/logos/socials/youtube.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>PREMIER CLASS SIMRACING 2023, ALL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+</html>
