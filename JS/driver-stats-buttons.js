@@ -4,7 +4,7 @@ function statsToggleResults () {
 
     // ALL PLATFORMS
     if (document.getElementById('all-platforms-button').checked) {
-        driverTitle = "All-Time Stats -";
+        driverTitle = "Cross-Platform Stats -";
         if (document.getElementById('tier-1-button').checked) {
             statsHtml = "stats/all-platforms/tier-1.html";
             driverTitle += " Tier 1";
@@ -102,7 +102,7 @@ function statsToggleResults () {
     if (window.matchMedia("(max-width: 62.49em)").matches) {
         driverTitle = driverTitle.replace("PlayStation", "PS");
         driverTitle = driverTitle.replace("Tier ", "T");
-        driverTitle = driverTitle.replace("All-Time", "Total");
+        driverTitle = driverTitle.replace("Cross-Platform", "Total");
     }
 
     // Update driver-title text
