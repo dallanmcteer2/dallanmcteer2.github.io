@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCS Records | All Time</title>
+    <link rel="icon" type="png" href="../img/misc/favicon.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/img/misc/apple-icon-192x192.png">
+    <link rel="stylesheet" href="../CSS/Main CSS/stylesindex.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/header.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/records.css">
+    <link rel="stylesheet" href="../CSS/Page Specific/standings.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/Main CSS/sidebar.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="/JS/records-buttons.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            statsToggleResults();
+        })
+    </script>
+</head>
+<body>
+    <nav class="main-nav">
+    <div id="mainHeader">
+        <header class="header">
+            <div class="logo">
+                <a href="/">
+                    <img src="../img/misc/PCSLogoWhite.png" alt="PCS Logo">
+                </a>
+            </div>
+        </header>
+    </div>
+    </nav>
+    <div class="navigation">
+        <label class="sidebar-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <a class="sidebar-links" href="../all-news">
+                    <h5 class="sidebar-links-text">Articles</h5>
+                </a>
+                <a class="sidebar-links" href="../calendar">
+                    <h5 class="sidebar-links-text">Calendar</h5>
+                </a>
+                <a class="sidebar-links" href="../standings/season-1/tier-1">
+                    <h5 class="sidebar-links-text">Standings</h5>
+                </a>
+                <a class="sidebar-links" href="../drivers/tier-1">
+                    <h5 class="sidebar-links-text">Drivers</h5>
+                </a>
+                <a class="sidebar-links" href="../records/stats">
+                    <h5 class="sidebar-links-text">Records</h5>
+                </a>
+                <!--<a class="sidebar-links" href="../archives">
+                    <h5 class="sidebar-links-text">Archives</h5>
+                </a>
+                <a class="sidebar-links" href="../about-us">
+                    <h5 class="sidebar-links-text">About Us</h5>
+                </a>-->
+                <a class="sidebar-links" href="../contact-us">
+                    <h5 class="sidebar-links-text">Contact Us</h5>
+                </a>
+                <a class="sidebar-links" href="../register">
+                    <h5 class="sidebar-links-text">Register</h5>
+                </a>
+            </nav>
+        </aside>
+    </div>
+    <div class="page-title">
+        <div>
+            <h1>PCS Records</h1>
+        </div>
+    </div>
+    <div class="driver-stats-menu-container button-container-large">
+        <!-- <div class="buttons">
+            <input type="radio" name="platform" id="all-platforms-button" onchange="statsToggleResults()" checked>
+            <label for="all-platforms-button" id="label-button">All Platforms</label>
+            <input type="radio" name="platform" id="pc-steam-button" onchange="statsToggleResults()">
+            <label for="pc-steam-button" id="label-button">PC (Steam)</label>
+            <input type="radio" name="platform" id="playstation-button" onchange="statsToggleResults()">
+            <label for="playstation-button" id="label-button">Playstation</label>
+            <input type="radio" name="platform" id="xbox-button" onchange="statsToggleResults()">
+            <label for="xbox-button" id="label-button">Xbox</label>
+        </div>
+        <div class="separator" id="separator"></div> -->
+        <div class="buttons tier-buttons invert">
+                <input type="radio" name="tier" id="tier-1-button" onchange="statsToggleResults()" checked>
+                <label for="tier-1-button" id="label-button">Tier 1</label>
+                <input type="radio" name="tier" id="tier-2-button" onchange="statsToggleResults()">
+                <label for="tier-2-button" id="label-button">Tier 2</label>
+                <input type="radio" name="tier" id="tier-3-button" onchange="statsToggleResults()">
+                <label for="tier-3-button" id="label-button">Tier 3</label>
+                <input type="radio" name="tier" id="tier-4-button" onchange="statsToggleResults()">
+                <label for="tier-4-button" id="label-button">Tier 4</label>
+                <input type="radio" name="tier" id="tier-5-button" onchange="statsToggleResults()">
+                <label for="tier-5-button" id="label-button">Tier 5</label>
+                <input type="radio" name="tier" id="tier-6-button" onchange="statsToggleResults()">
+                <label for="tier-6-button" id="label-button">Tier 6</label>
+        </div>
+        <div class="separator" id="separator"></div>
+        <div class="buttons stats-type-buttons">
+            <input type="radio" name="stat-type" id="wins-button" onchange="statsToggleResults()" checked>
+            <label for="wins-button" id="label-button">Wins</label>
+            <input type="radio" name="stat-type" id="podiums-button" onchange="statsToggleResults()">
+            <label for="podiums-button" id="label-button">Podiums</label>
+            <input type="radio" name="stat-type" id="poles-button" onchange="statsToggleResults()">
+            <label for="poles-button" id="label-button">Poles</label>
+            <input type="radio" name="stat-type" id="fastest-laps-button" onchange="statsToggleResults()">
+            <label for="fastest-laps-button" id="label-button">Fastest Laps</label>
+            <input type="radio" name="stat-type" id="points-button" onchange="statsToggleResults()">
+            <label for="points-button" id="label-button">Points</label>
+            <input type="radio" name="stat-type" id="races-button" onchange="statsToggleResults()">
+            <label for="races-button" id="label-button">Races</label>
+            <input type="radio" name="stat-type" id="drivers-titles-button" onchange="statsToggleResults()">
+            <label for="drivers-titles-button" id="label-button">Drivers' Titles</label>
+            <input type="radio" name="stat-type" id="teams-titles-button" onchange="statsToggleResults()">
+            <label for="teams-titles-button" id="label-button">Teams' Titles</label>
+        </div>
+    </div>
+    <div class="records-table">
+        <div>
+            <div>
+                <div class="records-title-container" id="title-1">
+                    <div class="records-title" id="records-title"></div>
+                </div>
+                <div id="records-js"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-socials">
+            <div class="socials-icons">
+                <a href="https://discord.gg/premierclasssimracing" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/discord.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/premierclasssim/" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/instagram.png">
+                    </div>
+                </a>
+                <a href="https://www.twitter.com/premierclasssim" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/twitter.png">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/premierclasssimracing" class="socials-link" target="_blank" rel="noreferrer">
+                    <div class="socials-container">
+                        <img class="socials-icons-footer-image" src="../img/logos/socials/youtube.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>PREMIER CLASS SIMRACING 2023, ALL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+</html>

@@ -256,6 +256,51 @@ img {
 .stats-not-available-container {
     border: none;
 }
+.driver-stats-menu-container {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #c34b1b;
+    background: #000 linear-gradient(90deg, #000 20%, #c34b1b 350%);
+}
+.button-container-large {
+    height: 10rem;
+}
+.buttons {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+    user-select: none;
+    align-items: center;
+    min-width: 25%;
+    max-height: 7.5rem;
+}
+.invert {
+    direction: rtl;
+}
+.tier-buttons, .stats-type-buttons {
+    overflow-y: scroll;
+    width: 25%;
+    flex-direction: column-reverse;
+}
+input[name="tier"], input[name="platform"], input[name="stat-type"] {
+    display: none;
+}
+input[type="radio"]:checked + label {
+    font-weight: 600;
+    color: #c34b1b;
+    transition: .2s ease-in-out;
+}
+label {
+    cursor: pointer;
+}
+.separator {
+    height: 80%;
+    border: #c34b1b 1px solid;
+}
 @media (max-width: 83em) {
     .selection-table, .records-table, .container-main {
         padding: 0 1.375rem;
@@ -419,6 +464,17 @@ img {
     .records-table {
         padding: 0;
     }
+    .driver-stats-menu-container {
+        height: 4rem;
+    }
+    .button-container-large {
+        height: 7rem;
+    }
+    .buttons {
+        font-size: 1.1em;
+        min-width: 50%;
+        max-height: 5.75rem;
+    }
 }
 @media (max-width: 40em) {
     .stats-not-available {
@@ -458,5 +514,9 @@ img {
     }
     .stats-not-available {
         font-size: 1.2rem;
+    }
+    .driver-stats-menu-container {
+        height: 3rem;
+        justify-content: center;
     }
 }
